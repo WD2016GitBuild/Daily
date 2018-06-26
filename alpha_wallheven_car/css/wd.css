@@ -1,0 +1,111 @@
+* {
+  padding:0px;
+  margin:0px;
+  outline:none;
+  border:none;
+  box-shadow:none;
+}
+
+#wd {
+	background-color:#000;
+	width:100vw;
+	height:100vh;
+	position:fixed;
+	top:0px;
+	left:0px;
+	z-index:99;
+}
+
+#wd div {
+	width:calc(100vw/15);
+	height:calc(100vw/15);
+	float:left;
+}
+
+#wd img {
+	opacity:0.2;
+	width:100%;
+	height:100%;
+	object-fit:cover;
+  transition:1s;
+}
+
+
+#footer {
+  width:100vw;
+  height: 65px;
+  background-color: #000;
+  opacity: 0.8;
+  filter: blur(2px);
+  position: fixed;
+  bottom:-20px;
+  left:0px;
+  z-index:999;
+}
+
+#styles {
+  width:100vw;
+  height:100vh;
+  position:fixed;
+  top:0px;
+  left:0px;
+  z-index:1000;
+  background-color:rgba(0, 0, 0, 0.8);
+  visibility: hidden;
+  opacity:0;
+}
+
+#styles.show {
+  visibility: visible;
+  opacity:1;
+}
+
+#styles .wrapper {
+  position:absolute;
+  top:50%;
+  left:50%;
+  transform:translate(-50%, -50%);
+}
+
+
+#styles .wrapper div {
+  width:300px;
+  height:50px;
+  line-height:50px;
+  text-align:center;
+  border:1px solid #fff;
+  font-size:16px;
+  color:#fff;
+  margin-bottom:2vh;
+  cursor:pointer;
+  cursor:pointer;
+}
+
+#styles .wrapper div:hover {
+  background-image:-webkit-linear-gradient(180deg, #bd30ff 0%, rgb(114,36,255) 100%);
+  border-image:-webkit-linear-gradient(180deg, #bd30ff 0%, rgb(114,36,255) 100%);
+}
+
+#styles .wrapper div.current {
+  background-image:-webkit-linear-gradient(180deg, #bd30ff 0%, rgb(114,36,255) 100%);
+  border-image:-webkit-linear-gradient(180deg, #bd30ff 0%, rgb(114,36,255) 100%);
+}
+
+#wd.style-flash div {
+  position:absolute;
+  top:0px;
+  left:0px;
+  display: none;
+  width:100vw;
+  height:100vh;
+  transition:opacity 1s;
+}
+
+#wd.style-flash div img {
+  opacity:1 !important;
+  filter:blur(15px);
+}
+
+#wd.style-flash div.show {
+  display: block;
+}
