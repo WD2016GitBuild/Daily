@@ -1,0 +1,221 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>OM</title>
+    <style>
+        * {
+            padding:0px;
+            margin:0px;
+            border:none;
+            outline:none;
+        }
+
+        body {
+            overflow-y:scroll;
+            font-family:microsoft yahei;
+        }
+
+        #wd {
+            width:800px;
+            margin:auto;
+            margin-top:30px;
+            margin-bottom:30px;
+        }
+        .item {
+            margin-bottom:5px;
+            width:100%;
+        }
+
+        .item:last-child {
+            margin-bottom: 0px;
+        }
+        .item div.title {
+            width:100%;
+            text-align:left;
+            padding:10px 10px;
+            box-sizing:border-box;
+            cursor: pointer;
+            position: relative;
+        }
+
+        .item div.title:after {
+            content:"";
+            display: block;
+            width:0px;
+            height:0px;
+            border-top:5px solid #fff;
+            border-left:5px solid transparent;
+            border-right:5px solid transparent;
+            position: absolute;
+            right:20px;
+            top:50%;
+            margin-top:-2.5px;
+            transition:1s;
+        }
+
+        .item.show div.title:after {
+            transform:rotateX(180deg);
+        }
+
+        .item div.title div {
+            width:100%;
+            color:#fff;
+        }
+
+        .item div.sub {
+            display: none;
+        }
+
+        .item.show div.sub {
+            display: block;
+        }
+
+        .item div.sub div div {
+            float:left;
+            padding:10px 10px;
+            box-sizing:border-box;
+            vertical-align: top;
+            word-break: break-all;
+        }
+        .item div.sub div div:first-child {
+            width:150px;
+            text-align:right;
+        }
+        .item div.sub div div:last-child {
+            width:calc(100% - 150px);
+            border-left:1px solid #ddd;
+        }
+
+        .item .sub > div:after {
+            content:"";
+            display: block;
+            clear:both;
+        }
+
+        .item .sub > div {
+            background-color: #f1f1f1;
+        }
+
+        .item .sub > div:nth-child(2n) {
+            background-color: #eaeaea;
+        }
+
+        @media all and (max-width: 1000px) {
+            #wd {
+                width:100vw;
+                margin:0px;
+                box-sizing: border-box;
+                padding:2vw;
+            }
+            .item {
+                border-left:none;
+                border-right:none;
+            }
+            .item .title {
+                font-size:16px;
+            }
+            .item div.sub div div {
+                font-size:14px;
+                padding-top:8px;
+                padding-bottom:8px;
+            }
+            .item div.sub div div:first-child {
+                width:90px;
+            }
+            .item div.sub div div:last-child {
+                width:calc(100% - 90px);
+            }
+        }
+    </style>
+</head>
+<body>
+    <div id="wd"></div>
+    <script type="text/javascript">
+        async function get(url, fn) {
+            try {
+                let response = await fetch(url);
+                let data = await response.text();
+                fn(data);
+            } catch (e) {
+                console.error("Oops, error", e);
+            }
+        }
+        var random_color = (()=>{
+            let bg_colors = [];
+            // background: linear-gradient(to right, #FFC371, #FF5F6D);
+            bg_colors.push(["FF5F6D", "5062ea"]);
+            bg_colors.push(["e226b4", "31b9ec"]);
+            bg_colors.push(["2668e2", "89c92d"]);
+            bg_colors.push(["8753ef", "ead250"]);
+            var num = bg_colors.length;
+            let current_color = r();
+            function r() {
+                return bg_colors[~~(Math.random()*num)];
+            }
+            let next_color;
+            function get() {
+                if(!next_color) {
+                    next_color = r();
+                }
+                while(next_color == current_color) {
+                    next_color = r();
+                }
+                current_color = next_color;
+                return current_color;
+            }
+            return {
+                get:get
+            }
+        })();
+        let html = "";
+        get("om.txt", function(data) {
+            var datas = data.split("[#]");
+            for(let a of datas) {
+                let order = a.split("#b#");
+                if(order.length > 1 && order[0]) {
+                    html += "<div class='item'>";
+                    // console.log(order);
+                    let bg_color = random_color.get();
+                    // console.log(bg_color);
+                    html += "<div class='title' style='background: linear-gradient(to right, #" + bg_color[0] + ", #" + bg_color[1] + ");'>";
+                    var item = order[0].split("#a#");
+                    var a2 = item[1];
+                    html += "<div>" + a2 + "</div>";
+                    html += "</div>";
+                    html += "<div class='sub'>";
+                    order.forEach((e,index) => {
+                        // console.log(e);
+                        if(index == 0) {
+                            return;
+                        }
+                        var a = e.split("#a#");
+                        var a1 = a[0];
+                        a2 = a[1];
+                        if(a1 && a2) {
+                            html += "<div>";
+                            html += "<div>#a#</div>".replace("#a#", a[0]);
+                            html += "<div>#a#</div>".replace("#a#", a[1]);
+                            html += "</div>";
+                        }
+                    });
+                    // console.log(html);
+                    html += "</div>";
+                    html += "</div>";
+                }
+            }
+            document.querySelector("#wd").innerHTML = html;
+            var items = document.querySelectorAll("#wd .item .title");
+            for(let i=0;i<items.length;i++) {
+                let item = items[i];
+                item.onclick = ()=>{
+                    item.parentNode.classList.toggle("show");
+                    return false;
+                }
+            }
+        });
+    </script>
+</body>
+</html>
