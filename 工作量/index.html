@@ -102,6 +102,10 @@
                 height: auto;
                 line-height: inherit;
                 border-right:none;
+                padding-left:0px;
+                padding-right:0px;
+                font-weight: bold;
+                font-size:20px;
             }
             li div.sub {
                 display: block;
@@ -112,6 +116,7 @@
                 display:block;
                 clear:both;
             }
+
             li div.sub div.item {
                 width:calc(100% / 5);
             }
@@ -119,7 +124,8 @@
                 width:33.33%;
             }
             li div.sub div.item div {
-                padding:1vw;
+                padding:2vw 0vw;
+                font-size:16px;
             }
             .others div.sub div.item:nth-child(4) {
                 width:50%;
@@ -131,19 +137,47 @@
 
         @media all and (max-width:600px) {
             li div.sub div.item {
-                width:33.333%;
+                width:50%;
+            }
+
+            li div.sub div.item:last-child {
+                width:100%;
             }
 
             li div.sub {
                 border-right:none;
             }
 
-            li div.sub div.item:nth-child(3) {
+            li:nth-child(2n) {
+                background-color: inherit;
+            }
+
+            li div.sub div.item:nth-child(2) {
+                border-right:1px solid #ddd;
+            }
+
+            li div.sub div.item div:nth-child(1) {
+                background-color:#eee;
+            }
+
+            li div.sub div.item:nth-child(4) {
                 border-right:1px solid #ddd;
             }
 
             li div.sub div.item:last-child {
                 border-right:1px solid #ddd;
+            }
+
+            .others div.sub div.item:nth-child(2) {
+                border-right:none;
+            }
+
+            .others div.sub div.item:nth-child(3) {
+                border-right:1px solid #ddd;
+            }
+
+            .others div.sub div.item:nth-child(4) {
+                border-right:none;
             }
         }
     </style>
@@ -151,12 +185,8 @@
 
 <body>
     <div id="wd">
-        <div class="item orders">
-            <ul></ul>
-        </div>
-        <div class="item others">
-            <ul></ul>
-        </div>
+        <div class="item others"><ul></ul></div>
+        <div class="item orders"><ul></ul></div>
     </div>
     <script type="text/javascript">
         const Order = function(product, type1,type2,type3,type4,type5) {
@@ -201,7 +231,7 @@
 
         const other = {
             type1:"创新风格#0.1/个",
-            type2:"Banner#30元/个",
+            type2:"另购Banner#30元/个",
             type3:"H5图文#50元/个",
             type4:"创意风格设计#50元/个",
             type5:"产品详情设计#50元/个"
