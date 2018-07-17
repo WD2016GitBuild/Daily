@@ -1,0 +1,1819 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>200+值得收藏的设计师资源站</title>
+    <style>
+     /*
+ * description: ä¸»ç«™æ”¹ç‰ˆæ ·å¼
+ * require: uicn.v1.css
+ * relevancy: XXX.js
+ *
+ * date: 2015-07-30
+ * update: (2015-09-01)
+ */
+
+ /*å…¬å…±æ ·å¼*/
+ a { color: #2c3e50; }
+ a:hover { color: #2980b9;}
+
+ /*æŒ‰é’® */
+ .btn-fixed-100 { width: 100px; padding-left: 0; padding-right: 0; }
+
+ /*èƒŒæ™¯å„ç§ç°è‰²*/
+ .bg-gray2 { background-color: #eaeef1; overflow: hidden; zoom: 1;}
+ .bg-gray3 { background: url("../../img/home/h-bg.jpg") repeat-x left top #eff3f5; width: 100%; height: auto; overflow: hidden; zoom: 1;}
+ /*æ–‡å­—å„ç§ç°è‰²*/
+ .txt-gray1 { color: #b8c4ce!important;}
+ .txt-orange { color: #f39c12!important;}
+ .txt-normal { color: #2c3e50!important;}
+ /*å­—ä½“å¤§å°*/
+ .f24 { font-size: 24px!important; }
+
+ /*èƒŒæ™¯é¢œè‰²*/
+ .bg-blue { background-color: #3498db!important; }
+ .bg-purple { background-color: #9b59b6!important; }
+ .bg-red { background-color: #e74c3c!important; }
+
+ .main { float: left; width: 940px;}
+ .aside { float: right; width: 220px; }
+
+ /*æŸ¥çœ‹è¯„è®ºç‚¹èµžæ•°é‡*/
+ .msg span { margin-right: 10px;}
+ .msg span i { font-size: 18px; color: #9aabb8; margin-right: 5px; }
+ .msg span em { font-size: 14px; color: #9aabb8; }
+
+ /*å·¦å³å—å®½åº¦*/
+ .w280 { width: 280px; }
+ .w820 { width: 820px; }
+
+/*
+ *
+ * é¦–é¡µ
+ *
+ */
+
+ /*ä½œå“ç­›é€‰*/
+ .h-screen { float: left; margin-top: 15px; }
+ .h-screen li { position: relative; float: left; }
+ .h-screen li a {display: block; height: 40px; margin-right: 25px; padding: 0 20px; font-size: 14px; color: #7c7c7c; line-height: 40px; text-align: center; }
+ .h-screen li a:hover { color: #3498db; }
+ .h-screen li a .num { position: relative; display: inline-block; height: 18px; line-height: 18px; margin-left: 10px; padding: 0 3px; background-color: #3498db; font-size: 12px; color: #fff; }
+ .h-screen li a .num:after,
+ .h-screen li a .num:before { content:""; width: 0; height: 0; position: absolute; border-style: solid; }
+ .h-screen li a .num:before { top: 0; left: -6px; border-color: transparent #3498db transparent transparent; border-width: 9px 7px 9px 0; }
+ .h-screen li a .num:after { top: 0; right: -6px; border-color: transparent transparent transparent #3498db; border-width: 9px 0 9px 7px; }
+ .h-screen li.on a { border: 1px solid #3498db; border-radius: 20px; font-weight: bold; color: #3498db; }
+ .h-screen li.on a:hover { border-color: #3498db; }
+ .h-screen li.on a .num { display: none; }
+ /*å…¬å‘Šé¸¡æ±¤*/
+ .h-soup { position: relative; float: right; width: auto; height: 40px; margin-top: 15px; padding: 0 110px 0 20px; background-color: #fff7e7; border-radius: 20px; box-shadow: 1px 1px 2px rgba(0,0,0,.2); }
+ .h-soup li { float: right; }
+ .h-soup li i { position: absolute; top: 8px; font-size: 28px; color: #eae1d0; cursor: pointer; }
+ .h-soup li.open i { color: #e67e22; }
+ .h-soup li i.icon-star1 { right: 7px; }
+ .h-soup li i.icon-heart-round { right: 41px; }
+ .h-soup li i.icon-warn { right: 75px; }
+ .h-soup li .txt { display: none; font-size: 14px; color: #6b3612; line-height: 40px; white-space: nowrap;  display: none;white-space: nowrap;text-overflow: ellipsis;white-space: nowrap;overflow: hidden;max-width:500px; }
+ .h-soup li.open .txt { display: block; }
+
+ /*æ²¡æœ‰å…³æ³¨*/
+ .h-follow { }
+ .h-follow .tit1 { margin-top: 38px; font-size: 24px; color: #34495e; text-align: center; font-weight: bold; }
+ .h-follow .tit2 { margin-bottom: 38px; font-size: 20px; color: #34495e; text-align: center; }
+ .h-follow-box { border: 3px solid #e2e6ea; }
+ .h-follow-box ul { margin: 0 -6px 60px 0;}
+ .h-follow-box .item { float: left; width: 220px; margin: 0 8px; }
+ .h-follow-box .avatar-sm { display: block; margin: 0 auto; margin-top: 45px; }
+ .h-follow-box .name { display: block; margin: 6px 0 3px; font-size: 12px; color: #3498db; text-align: center; }
+ .h-follow-box .intro { font-size: 12px; height: 36px; overflow: hidden; margin-bottom: 25px; color: #7f8c8d; text-align: center;}
+ .h-follow-check { width: 70px; margin: 0 auto; }
+ .h-follow-check .check { float: left; width: 12px; height: 12px; margin: 4px 10px; background-color: #fff; border: 1px solid #bac1c2; cursor: pointer; }
+ .h-follow-check .check em { display: block; margin-left: -1px; background: url("../../img/home/h-check.png") no-repeat left top; width: 18px; height: 12px; }
+ .h-follow-check p { float: left; font-size: 14px; color: #e67e22; font-weight: bold; }
+
+ .h-follow-btn { width: 1174px;  border-top: 1px solid #e0e7eb;}
+ .h-follow-btn a { display: block; width: 220px; height: 40px; margin: 20px auto 30px; font-size: 14px; color: #e67e22; line-height: 38px; text-align: center; border: 1px solid #e67e22; border-radius: 20px; }
+
+ /*æ–°æ‰‹å…¥é—¨*/
+ .h-novice { float: left; width: 280px; background-color: #fff; }
+ .h-novice .cover { display: block; width: 280px; height: 210px; }
+ .h-novice .info { padding: 15px; height: 92px; overflow: hidden; }
+ .h-novice .info:before { content: ""; position: absolute; top: 195px; left: 20px; width: 0; height: 0;
+ border-color: transparent transparent #fff transparent;
+ border-style: solid;
+ border-width: 0 15px 15px; }
+ .h-novice .info h1 { max-height: 48px; overflow: hidden; font-size: 0;}
+ .h-novice .info h1 a { display: inline-block; font-size: 16px; font-weight: bold; }
+ .h-novice .info p.txt { height: 44px; margin-top: 5px; overflow: hidden; font-size: 14px; color: #7c7c7c; }
+ .h-novice .author { padding: 0 15px; height: 88px; }
+ .h-novice .author .avatar { width: 50px; height: 50px; margin-right: 10px; }
+ .h-novice .author .name { margin-top: 5px; }
+ .h-novice .author .name { font-size: 14px; font-weight: bold; }
+
+ .h-novice-first { float: left; width: 334px; height: 624px; border: 3px solid #3498db; }
+ .h-novice-first .cover { width: 334px; height: 134px; }
+ .h-novice-first .list { padding: 12px 20px 0; }
+ .h-novice-first .list li { }
+ .h-novice-first .list li:before { content: ""; float: left; width: 6px; height: 6px; margin: 13px 0; background-color: #3498db; border-radius: 50%;}
+ .h-novice-first .list li a { display: block; height: 32px; font-size: 14px; color: #7c7c7c; line-height: 32px; text-indent: 10px; }
+ .h-novice-first .list li a:hover { color: #2980b9; }
+ .h-novice-first .more { display: block; width: 100%; height: 50px; margin-top: 12px; font-size: 14px; color: #7c7c7c; line-height: 50px; text-indent: 40px; background-color: #ecf0f1; }
+
+ .h-novice-tag { position: absolute; top: 3px; left: 0; height: 36px; line-height: 36px; font-size: 86px; color: #f39c12; }
+ .h-novice-tag .txt { position: absolute; top: 0; left: 0; width: 75px; font-family: "Microsoft Yahei"; font-size: 16px; color: #fff; text-align: center;
+ -webkit-text-stroke-width: initial;}
+ .h-novice-tag.purple { color: #8e44ad; }
+ .h-novice-big { height: 54px; line-height: 54px; font-size: 130px; color: #8e44ad;  }
+ .h-novice-big .cont { position: absolute; top: 0; left: 0; }
+ .h-novice-big .t1 { font-size: 20px; color: #fff; font-weight: bold; }
+ .h-novice-big .t2 { font-size: 14px; color: #fff; font-weight: bold; font-style: italic; }
+ .h-novice-big .t3 { font-size: 12px; color: #fff; font-style: italic;  }
+
+ .h-novice-study { position: absolute; top: 3px; left: 0; width: 100px; height: 31px; padding: 31px 0 0 24px; background: url("../../img/home/h-novice-study.png") no-repeat left top; font-size: 14px; color: #fff; font-weight: bold; font-style: italic;}
+
+ /*æ–‡ç« èµ„è®¯*/
+ /*æ–‡ç« æ ‡é¢˜*/
+ .h-tit { height: 42px; line-height: 42px;padding-bottom: 5px; }
+ .h-tit a { float: left; height: 40px; margin-right: 25px; padding: 0 20px; font-size: 14px; color: #7c7c7c; line-height: 40px; text-align: center; transition: all 0s;}
+ .h-tit a:hover { color: #3498db; }
+ .h-tit a.on { border: 1px solid #3498db; border-radius: 20px; font-weight: bold; color: #3498db; }
+ .h-tit2 { font-size: 14px; color: #34495e; height: 40px; line-height: 40px; margin: 28px 0 10px; font-weight: bold}
+ /*æ–‡ç« åˆ—è¡¨*/
+ .h-article-list { width: 100%; }
+ /*.h-article-list .ptbw {  border-top: 1px solid #e0e7eb; }*/
+ .h-article-list li { padding: 20px 0; border-bottom: 1px solid #e0e7eb; position: relative;}
+/*  .h-article-list li>a{display: inline-block;}*/
+ .h-article-list li.on h1 a{color:#2980b9}
+ .h-article-list li.on{border-bottom:1px solid #fff;}
+  .h-article-list li.oe{border-bottom:1px solid #fff;}
+  .h-article-list li.on .shade{opacity: 1;transition:all .2s;}
+  .h-article-list li .shade{opacity: 0; filter:alpha(opacity=0); position:absolute; z-index: 1; top:0px; right: -25px; bottom: 0; left: -23px; background-color: #fff; box-shadow: 0 0 12px rgba(0, 0, 0, 0.1);transition:all .2s;}
+  .h-article-list li .shade:after { content:""; position: absolute; top: -1px; right: -1px; bottom: -1px; left: -1px; border: 3px solid #3498db; }
+  .h-article-list li .showd{position: relative;z-index: 2;}
+ .h-article-list .cover { float: left; display: block; width: 160px; height: 120px; }
+ 
+.h-article-list li .cover img {
+-webkit-transform: scale(1);
+-moz-transform: scale(1);
+-ms-transform: scale(1);
+transform: scale(1);
+-webkit-transition: -webkit-transform 0.2s;
+-moz-transition: -moz-transform 0.2s;
+-ms-transition: -ms-transform 0.2s;
+transition: transform 0.2s;
+}
+.h-article-list li.on .cover img { 
+-webkit-transform: scale(1.05);
+-moz-transform: scale(1.05);
+-ms-transform: scale(1.05);
+transform: scale(1.05);}
+
+
+ .h-article-info { position: relative; float: left; width: 640px; margin-left: 20px; }
+ .h-article-info h1 { margin: 2px 0; }
+ .h-article-info h1 span { float: left; display: block; max-width: 450px; font-size: 18px; font-weight: bold;}
+ .h-article-info .tag { float: left; height: 25px; margin: 1px 5px 1px 0; padding: 0 10px; font-size: 12px; color: #fff; border-radius: 2px; line-height: 25px; }
+ .h-article-info p { max-height: 44px; overflow: hidden; margin-top: 5px; color: #7f8c8d; }
+ .h-article-info .avatar img { width: 20px; height: 20px; }
+ .h-article-info .avatar .name { padding: 0 15px; vertical-align: middle; font-size: 12px; color: #394a58; font-weight: bold; line-height: 21px;}
+ .h-article-info .avatar .name img{border-radius:0;}
+ .h-article-info .avatar .name:after { content:""; float: right; height: 14px; margin: 3px 20px 3px 0; border-right: 1px solid #e0e7eb; }
+ .h-article-info .data { position: absolute; top: 5px; right: 0; color: #bdbdbd; }
+ .h-article-info .data i { margin-right: 10px; color: #bdbdbd; font-size: 14px;}
+
+ .h-article-info .icon-certified2{font-size: 14px;color: #3996db;vertical-align: middle;line-height: 21px;}
+ .h-article-info .icon-recommendation_designer{font-size: 14px;color: #e74c3c;vertical-align: middle;line-height: 21px;}
+ .h-novice .icon-recommendation_designer{font-size: 12px;color: #e74c3c;}
+ /*æ›´å¤šæŽ¨è*/
+ .h-list-more { display: block; margin: 24px auto 0; width: 220px; height: 40px; font-size: 14px; line-height: 40px; text-align: center;  border: 1px solid #bdc3c7; border-radius: 30px;}
+ .h-list-more:hover { border-color: #3498db; }
+ .more-border { width: 100%; border-top: 1px solid #e0e7eb;   min-height: 90px!important;}
+
+ /*ä¾§æ æ‹›è˜åˆ—è¡¨*/
+ .h-tit-aside { height: 40px; margin-bottom: 17px; font-size: 14px; color: #7c7c7c; line-height: 40px; }
+ .h-aside-list { box-shadow: 0 1px 4px rgba(0,0,0,.5); }
+ .h-aside-list li > a { display: block; width: 280px; height: 125px; }
+ .h-aside-list .cover { width: 280px; height: 125px; }
+ .h-aside-list + .more { display: block; margin: 0 auto; width: 43px; height: 36px; background: url("../../img/home/arrow3.png") no-repeat center top; font-size: 12px; color: #7f8c8d; text-align: center; line-height: 28px;}
+ .h-aside-show { opacity: 0; visibility: hidden; padding: 18px 50px 18px 25px; position: absolute; top: 0; right: 0; bottom: 0; left: 0; background-color: rgba(0,0,0,.6); transition: all .3s;}
+ .h-aside-show .item { position: absolute; font-size: 14px; color: #fff; }
+ .h-aside-show .item:nth-child(1) { bottom: 18px;}
+ .h-aside-show .item:nth-child(2) { bottom: 40px;}
+ .h-aside-show .item:nth-child(3) { bottom: 62px;}
+ .h-aside-show .item:nth-child(4) { bottom: 84px;}
+ .h-aside-show .tip { position: absolute; right: 20px; bottom: 14px; font-size: 12px; color: rgba(255,255,255,.5); text-align: center; }
+ .h-aside-show .tip .num { display: block; width: 34px; height: 38px; font-size: 44px; line-height: 38px; text-align: left; font-style: italic; font-weight: bold;  }
+ .h-aside-show .tip .txt { font-size: 22px; font-weight: bold; }
+ .h-aside-list li > a:hover .h-aside-show { opacity: 1; visibility: visible; }
+
+ /*è®¾è®¡å¸ˆ*/
+ .h-member-btn { border-top: 1px solid #e0e7eb;}
+ .h-member { width: 1200px; }
+ .h-member li { float: left; width: 300px; padding-top: 20px; min-height: 82px; }
+ .h-member li a.avatar-sm { float: left; margin-right: 10px; }
+/*.h-member li a.avatar-sm img {
+  -webkit-transition: -webkit-transform 0.3s;
+  -moz-transition: -moz-transform 0.3s;
+  -ms-transition: -moz-transform 0.3s
+  transition: transform 0.3s;
+}
+.h-member li a.avatar-sm:hover img {
+-webkit-transform: rotate(360deg);
+-moz-transform: rotate(360deg);
+-ms-transform: rotate(360deg);
+transform: rotate(360deg);
+}*/
+.h-member .cont { float: left; width: 210px; }
+.h-member .cont .user { font-weight: normal; }
+.h-member .cont .user a { color: #3498db; font-size: 14px; }
+.h-member .cont .user a i{color: #e74c3c;font-size: 12px;}
+.h-member .cont .text { max-height: 40px; overflow: hidden; color: #7f8c8d; font-size: 14px; line-height: 20px; }
+.h-member .cont .date { white-space: nowrap; overflow: hidden; color: #D9E1E5; font-size: 14px; line-height: 20px; color: #2c3e50; opacity: .3; filter:alpha(opacity=30); }
+.h-member-box + .line { border-top: 1px solid #e0e7eb; margin-top: 5px; }
+
+/*åˆä½œä¼™ä¼´*/
+.h-partners .logo { margin: 0 -10px; }
+.h-partners .logo li { float: left; }
+.h-partners .logo li a { display: block; width: 150px; height: 50px; text-align: center; margin: 0 10px; }
+.h-partners .text {margin: 20px 0 30px;}
+.h-partners .text li { float: left; width: 168px;text-align: left;opacity: 0.6;margin-top: 10px}
+ .h-partners .text li:nth-of-type(7){
+     text-indent: 35px;
+ }
+ .h-partners .text li:nth-of-type(14){
+     text-indent: 35px;
+ }
+.h-partners .text li a { display: block; font-size: 16px; }
+
+/*ä½œå“æ–‡ç« åˆ—è¡¨ç®€å•åˆ†é¡µ*/
+.h_page { display: table; margin: 0 auto; width: auto; height: 40px; }
+.h_page ul { }
+.h_page ul li { float: left; }
+.h_page ul li a { display: block; width: 40px; height: 40px; margin: 0 10px; border: 1px solid #bdc3c7; border-radius: 50%; font-size: 20px; color: #bdc3c7; text-align: center; line-height: 38px;
+  -webkit-box-sizing: border-box;
+  -moz-box-sizing: border-box;
+  box-sizing: border-box;}
+  .h_page ul li a:hover,
+.h_page ul li a.on { color: #2d3e4f; border-color: #2d3e4f; font-weight: bold; }
+.h_page ul li:last-child a { line-height: 25px; }
+
+
+/*
+ *
+ * è¯¦æƒ…é¡µ
+ *
+ */
+ .works-main { /*margin-top: 30px;*/ background-color: #fff; box-shadow: 0 0 3px rgba(0,0,0,.1); }
+ .works-top { padding: 20px;}
+ .works-top .left h1 { height: 34px; }
+ .works-top .left h1 strong { display: inline-block; max-width: 640px; white-space: nowrap; overflow: hidden; font-size: 20px; color: #2c3e50; font-weight: bold; height: 30px; }
+ .works-top .left h1 .edit { margin-left: 10px; vertical-align: super; }
+ .works-top .left { float: left; width: 700px; }
+ .works-top .left .det { margin-top: 5px; font-size: 14px; height: 22px; line-height: 22px; overflow: hidden;}
+ .works-top .left .det .tag2 { float: left; padding: 0 5px; height: 20px; font-size: 12px; color: #9aabbf; line-height: 20px; background-color: #dfe5e9; border-radius: 2px;}
+ .works-top .left .det span { float: left; }
+ .works-top .left .det .txt-gray1 { margin-left: 25px; }
+ .works-top .left .det .time { margin-left: 20px; }
+ .works-top .left .det .time i { float: left; height: 21px; line-height: 21px; margin-right: 5px; color: #9aabb8; }
+ .works-top .left .det .time em { float: left; height: 21px; line-height: 21px; color: #9aabb8;}
+ .works-top .left .det .disabled { color: #b8c4ce; cursor: not-allowed; }
+ .works-top .left .det .disabled:hover { text-decoration: none; }
+ .works-top { }
+ .works-top { }
+ .works-top { }
+
+ .copyright { float: left; }
+ .copyright i { font-size: 22px; cursor: pointer; }
+ .copyright i.on { color: #3498db; }
+ .copyright .text { opacity: 0; position: absolute; top: 25px; left: -78px; width: 180px; background-color: #3498db; color: #fff; padding: 10px 0; line-height: 14px; font-size: 14px; text-align: center; border-radius: 2px;
+  -webkit-transition: all .5s;
+  -moz-transition: all .5s;
+  -ms-transition: all .5s;
+  -o-transition: all .5s;
+  transition: all .5s; }
+  .copyright .text:before { content: ""; position: absolute; top: -6px; left: 50%; margin-left: -8px; border-color: transparent transparent #3498db transparent; border-style: solid; border-width:  0 7px 8px 7px; height: 0; width: 0;}
+  .copyright i:hover + .text { opacity: 1; top: 30px;}
+
+  .works-top .right { float: left; width: 200px; }
+  .works-top .right h3 { position: absolute; right: 20px; margin-top: 3px; width: 500px; overflow: hidden; white-space: nowrap; text-align: right; }
+  .works-top .right h3 a { font-size: 14px; color: #16a085; transition: all .2s;}
+  .works-top .right h3 a:hover { text-decoration: underline; }
+  .works-top .hot { text-align: right; margin-top: 15px; margin-right: 12px; height: 45px; }
+  .works-top .hot i { font-size: 30px; color: #acbbc6; vertical-align: super; }
+  .works-top .hot .num { font-size: 30px; color: #acbbc6; font-weight: bold; font-style: italic;}
+  .works-top .hot .num em { font-size: 18px; font-style: italic;}
+  .works-top .hot .num strong { position: absolute; right: 5px; top: 25px; font-size: 22px; }
+  .works-top .tag-star { position: absolute; top: -6px; right: -6px; }
+  /*åˆ é™¤ä½œå“æŒ‰é’®å¼¹å±‚*/
+  .modal-delet{width: 700px;margin:0 auto;z-index: 101;text-align:center;}
+  .modal-delet .icon-close{position: absolute;top:0;right: 0;width:60px;height: 60px;background-color: #e74c3c;font-size: 25px;color:rgba(255,255,255,0.5); line-height: 60px;text-align: center; }
+  .modal-delet .title{width: 100%;height: 60px;line-height: 60px;text-align:left;border-bottom: 1px solid #e9ecee;padding-left:25px;box-sizing: border-box;font-size: 20px;color: #34495e;}
+  .modal-delet .tip{padding-top: 20px;line-height: 30px;font-size:14px;color: #34495e; }
+  .modal-delet .tip em{width: 95px;height: 30px;line-height:30px;font-size:16px;display: inline-block;margin:0 10px; color: #fff;font-weight: bold;background-color:#e74c3c;border-radius:30px;  }
+  .modal-delet .tit{font-weight: bold;font-size: 20px;color: #e74c3c;padding-top:15px;}
+  .modal-delet .sent{font-size: 15px;color: #34495e;padding-top: 10px;}
+  .modal-delet .contents{padding-top: 10px;}
+  .modal-delet .contents p{font-size: 14px;color: #34495e;padding-bottom:5px;}
+  .modal-delet .contents p em{width:77px;display: inline-block;text-align: center; color:#e74c3c;font-weight: bold; }
+  .modal-delet .still{width: 553px;height: 30px;display: inline-block;border-bottom:1px solid #ecf0f1;position: relative; }
+  .modal-delet .still em{width: 180px;display: inline-block;text-align: center;background: #fff;height: 30px;line-height: 30px; font-weight: bold;font-size: 18px;color: #e74c3c;position: absolute;top:15px;left:50%;margin-left:-90px;z-index: 1;}
+  .modal-delet .mobtn{padding-top:40px; padding-bottom: 30px;}
+  .modal-delet .mobtn p{display: inline-block;}
+  .modal-delet .mobtn a{width:220px;height: 70px;line-height: 70px;font-size: 18px;color: #fff; }
+  .modal-delet .mobtn a.yes{background-color: #95a5a6;}
+  .modal-delet .mobtn a.no{background-color: #e74c3c;margin-left: 80px;}
+  
+  /*ä½œå“å†…å®¹*/
+  .works-cont { padding: 30px 20px  30px 20px; border-top: 1px solid #eff3f5;  border-bottom: 1px solid #eff3f5; }
+  .works-cont p{font-size: 16px; line-height: 2;width: 600px;margin: 0 auto}
+  #p-content .p-content-img{text-align:left !important;}
+
+  .works-cont img { display: block !important;padding:0; margin: 0 0 20px 0; max-width: 900px; overflow: hidden;width: auto;height: auto;position: relative;left: 50%;transform: translateX(-50%); 
+  -ms-transform: translateX(-50%);-moz-transform: translateX(-50%);-webkit-transform: translateX(-50%);-o-transform: translateX(-50%);}
+
+
+
+  .works-cont .video-box { width: 720px; height: 540px; margin: 0 auto;}
+  /* ç¼–è¾‘å™¨æ ·å¼ */
+  /*  img.fr-fil {
+      z-index: 1;
+      position: relative;
+      margin: auto;
+      overflow: auto;
+      float: left!important
+  }
+
+  img.fr-fil.fr-dib {
+      float: none!important;
+      margin-left: 0!important
+  }
+
+  img.fr-fir {
+      z-index: 1;
+      position: relative;
+      margin: auto;
+      overflow: auto;
+      padding: 10px 3px 10px 10px;
+      float: right!important
+  }
+
+  img.fr-fir.fr-dib {
+      float: none!important;
+      margin-right: 0!important
+  }
+
+  img.fr-fin {
+      z-index: 1;
+      position: relative;
+      margin: auto;
+      overflow: auto;
+      float: none
+  }
+
+  img.fr-fin.fr-dib {
+      padding: 10px 0
+  }
+
+  img.fr-dib {
+      vertical-align: top;
+      display: block
+}*/
+
+  /*ä½œå“æ ‡ç­¾*/
+  .works-tag { padding: 0 20px; }
+  .works-tag li {display: inline-block; height: 20px; margin-right: 20px; margin-top: 10px; }
+  .works-tag li i { padding-right: 5px; color: #b8c4ce; font-size: 14px; }
+  .works-tag li span { color: #b8c4ce;}
+  /*ä½œå“åˆ†äº«ã€ä¸‹è½½ã€ç‚¹èµž*/
+  .works-bottom { width: 900px; height: 140px; padding: 0 20px; }
+  .works-bottom .share {}
+  .works-bottom .share { position: relative; float: left; margin-top: 32px; }
+  .works-bottom .share > a { float: left; margin-right: 10px; }
+  .works-bottom .share > a > i { display: inline-block; width: 40px; height: 40px; font-size: 24px; color: #34495e; text-align: center; line-height: 40px; background-color: #fff; border-radius: 50%; border: 1px solid #34495e;
+    -webkit-box-sizing: border-box;
+    -moz-box-sizing: border-box;
+    box-sizing: border-box;}
+    .works-bottom .share > a > i.icon-huaban { font-size: 21px; }
+    .works-bottom .share > a > i.icon-douban1 { font-size: 19px; }
+    .works-bottom .share > a.on > .icon-weixin1 { background-color: #3fb743; color: #fff; border-color: #3fb743; }
+    .works-bottom .share > a:hover > i { color: #fff;}
+    .works-bottom .share > a:hover > .icon-sina { background-color: #EE4B4B; border-color: #EE4B4B;}
+    .works-bottom .share > a:hover > .icon-weixin1 { background-color: #3fb743; border-color: #3fb743;}
+    .works-bottom .share > a:hover > .icon-huaban { background-color: #EA5075; border-color: #EA5075;}
+    .works-bottom .share > a:hover > .icon-douban1 { background-color: #1ABC9C; border-color: #1ABC9C;}
+    .works-bottom .share .weixin-box { display: none; position: absolute; left: 5px; top: -160px; bottom: initial; width: 270px; padding: 18px; background-color: #fff; box-shadow: 0 0 5px rgba(0,0,0,.1); border-radius: 2px; }
+    .works-bottom .share .weixin-box:before { content:""; width: 10px; height: 10px; position: absolute; left: 60px; bottom: -5px; background-color: #fff; box-shadow: 0 0 5px rgba(0,0,0,.1);
+    -webkit-transform: rotate(45deg);
+    -moz-transform: rotate(45deg);
+    -ms-transform: rotate(45deg);
+    -o-transform: rotate(45deg);
+    transform: rotate(45deg);}
+    .works-bottom .share .weixin-box img { float: left; width: 111px; height: 111px; position: relative; z-index: 1;}
+    .works-bottom .share .weixin-box p { display: inline-block; width: 100px; margin-left: 15px; padding-top: 22px; font-size: 14px; position: relative; z-index: 1;}
+    .works-bottom .share .weixin-box .icon-close { position: absolute; right: 8px; top: 8px; color: #34495e; z-index: 1; }
+    /*ä½œå“ç‚¹èµž*/
+    .works-zan { display: block; width: 190px; margin: 20px auto 0; }
+    .works-zan .iconfont{background:url(../../img/bgz.png) no-repeat center;background: -webkit-image-set(url("../../img/bgz1.png") 1x,url("../../img/bgz2.png") 2x) no-repeat center top; background-size: 190px;width: 190px;height: 65px;display: inline-block;}
+    /*.works-zan .iconfont{background:url(../../img/bg-blue.png) no-repeat 0 0; background-size: 190px;width: 190px;height: 66px;display: inline-block;}
+    .works-zan .award{background:url(../../img/bg-green.png) no-repeat 0 0; background-size: 190px;width: 190px;height: 66px;display: inline-block;}*/
+    .works-zan .cont { position: absolute; top: 0; left: 0; width: 190px; }
+    .works-zan .cont i { float: left; margin-left: 32px; font-size: 30px; color: #fff; line-height: 66px; margin-top: -2px;}
+    .works-zan .cont .txt { float: left; margin-left: 8px; font-family: "Microsoft Yahei"; font-size: 18px; color: #fff; line-height: 65px;
+    -webkit-text-stroke-width: initial;}
+    .works-zan .cont2 i { float: left; margin-left: 32px; font-size: 30px; color: #fff; line-height: 66px;margin-top: -4px; }
+    .works-zan .cont2 .txt { float: left; margin-left: 8px; font-family: "Microsoft Yahei"; font-size: 18px; color: #fff; line-height: 65px;
+    -webkit-text-stroke-width: initial;}
+    .works-zan .cont .num { float: right; margin-right: 32px; font-size: 12px; color: rgba(255,255,255,.5); text-align: right; line-height: 65px; }
+
+    /*ä½œå“ä¸‹è½½ã€æ”¶è—*/
+    .works-bottom .oper { float: right; margin-top: 32px; }
+    .works-bottom .oper li { float: left; margin-left: 20px; }
+    .works-bottom .oper li a { display: block; width: 120px; height: 38px; font-size: 14px; color: #2c3e50; line-height: 38px; text-align: center; border-radius: 20px; border: 1px solid #4f5f6e; }
+    .works-bottom .oper li a i { margin-right: 5px; font-size: 18px; color: #2c3e50; line-height: 35px; }
+    .works-bottom .oper li a.on { color: #fcab2b; border-color: #fcab2b;}
+    .works-bottom .oper li a.on i { color: #fcab2b; }
+    .works-bottom .oper li a:hover { color: #3498db; border-color: #3498db;}
+    .works-bottom .oper li a:hover i { color: #3498db; }
+    .works-bottom .tip { font-size: 12px; color: #9dacb9; line-height: 28px; }
+
+    /*ä½œå“ä½œè€…ä¿¡æ¯*/
+    .works-author { width: 900px; padding: 20px 20px; background-color: #f6f9fa; border-top: 1px solid #eff3f5; border-bottom: 1px solid #eff3f5;}
+    .works-author .avatar-md { margin: 10px 0; }
+    .works-author .info { display: table;  width: 245px; overflow: hidden; margin: 10px 15px; }
+    .works-author .info > div { display: table-cell; vertical-align: middle; height: 100px; }
+    .works-author .info h1 { height: 30px; line-height: 30px; }
+    .works-author .info .name { display: inline-block; width: 245px; font-size: 20px; color: #2c3e50; font-weight: bold; }
+    .works-author .info .name i{font-size: 14px;color: #3996db;}
+    .works-author .info .name i.icon-recommendation_designer{color: #e74c3c;}
+    .works-author .info .name:hover { color: #3498db; }
+    .works-author .info .intro { width: 245px; color: #bdc3c7; }
+    .works-author .info .num { width: 245px; color: #34495e; }
+    .works-author .info .medal img { width: 26px; height: 26px; }
+
+    /*å…³æ³¨ã€ç§ä¿¡æŒ‰é’®ç»„*/
+    .works-author .btn-group { float: left; width: 90px; padding: 40px 0; }
+    .works-author .btn-group .btn-item { float: left; width: 88px; height: 28px; margin: 5px 0; border: 1px solid #bdc3c7; border-radius: 20px; font-size: 12px; color: #34495e; line-height: 28px; text-align: center; }
+    .works-author .btn-group .btn-item i { margin-right: 5px; font-size: 14px; color: #34495e; }
+    .works-author .btn-group .btn-item i.icon-add-bold,
+    .works-author .btn-group .btn-item i.icon-close-bold { font-size: 12px; }
+    .works-author .btn-group .btn-item:hover { color: #3498db; border-color: #3498db;}
+    .works-author .btn-group .btn-item:hover i { color: #3498db; }
+
+/* å…³æ³¨
+myfollow å…³æ³¨+
+havefollow å·²å…³æ³¨âˆš
+mutualfollow ç›¸äº’å…³æ³¨ =
+onfollow æ»‘è¿‡å…³æ³¨
+unfollow æ»‘è¿‡å·²å…³æ³¨å’Œç›¸äº’å…³æ³¨å˜å–æ¶ˆå…³æ³¨ X
+*/
+.myfollow i:before { content: "\e6cf"; }
+.havefollow i:before { content: "\e6d1"; }
+.unfollow i:before { content: "\e6d0"; }
+.mutualfollow i:before { content: "\e6d2"; }
+
+/*ä½œå“ä½œè€…å…¶ä»–ä½œå“*/
+.works-author .more { float: right; width: 340px; }
+.works-author .more .item { float: right; width: 160px; height: 120px; margin-left: 10px; }
+.works-author .more .item:hover { opacity: .9; }
+
+/*æ²¡æœ‰å…¶ä»–ä½œå“æ—¶æ˜¾ç¤º*/
+.works-nothing { display: block; width: 160px; margin: 0 auto; }
+.works-nothing img { display: block; width: 108px; height: 65px; margin: 10px auto 0; }
+.works-nothing span { display: block; font-size: 14px; color: #bdc3c7; text-align: center; line-height: 16px; margin-top: -5px; }
+.works-nothing strong { display: block; font-size: 17px; color: #bdc3c7; text-align: center; line-height: 18px; font-weight: bold; }
+/*
+* è¯„è®º-main
+*/
+/*æœªç™»å½•æé†’*/
+.comment-login-box { margin: 20px; }
+.comment-login { width: 100%; height: 86px; padding: 22px 30px; background-color: #fff7e7; border: 1px solid #ded6c5;
+  -webkit-box-sizing: border-box;
+  -moz-box-sizing: border-box;
+  box-sizing: border-box;}
+  .comment-login p { float: left; font-size:14px; color: #6b3612; line-height: 40px; }
+  .comment-login .btn { border-radius: 0; }
+  /* è¯„è®ºè¾“å…¥æ¡† */
+  .comment-form { margin: 20px; }
+  .comment-form textarea { width: 100%; height: 115px; padding: 18px; color: #6d6d6d; margin: 0; font-size: 14px;  border: 1px solid #e4e9ed;
+    -webkit-box-sizing: border-box;
+    -moz-box-sizing: border-box;
+    box-sizing: border-box;}
+    .comment-form textarea:focus { border: 1px solid #3da2e3; }
+    .comment-warn { position: absolute; right: 15px; top: 85px; font-size: 12px; color: #bdc3c7; }
+    .comment-warn span { color: #f39c12; font-weight: bold; }
+    .comment-tip { margin-right: 15px; font-size: 14px; color: #bdc3c7; line-height: 40px; }
+    .comment-form .btn { padding: 0; border-radius: 0; width: 100px; height: 40px; line-height: 40px; }
+
+    .comment-form-inner { margin: 20px -70px 0 0; }
+    /*éªŒè¯ç */
+    .comment-code { width: 148px; height: 40px; overflow: hidden; }
+    /*.comment-code img { width: 100%; height: 100%; }*/
+    .comment-code-input { width: 100px; height: 28px; margin-left: 15px; margin-right: 10px; border: 1px solid #ccc;padding: 5px 10px;font-size: 14px; }
+    .comment-code-input:focus { border-color: #3da2e3;}
+
+    /*ç²¾å½©è¯„è®º*/
+    .comment-main .tag { position: absolute; top: 45px; right: -5px; background: url("../../img/home/ribbon.png") no-repeat; width: 61px; height: 28px; font-size: 12px; color: #fff; text-indent: 20px; line-height: 20px; }
+    .comment-main + .all { position: relative; margin: 20px 0; border-top: 1px solid #eff3f5; clear: both;}
+    .comment-main + .all:before { content: "å…¨éƒ¨è¯„è®º"; font-family: "Microsoft Yahei"; position: absolute; top: -14px; left: 50%; margin-left: -50px; width: 100px; background-color: #fff; font-size: 16px; color: #9dacb9; text-align: center; }
+    /*è¯„è®ºåˆ—è¡¨*/
+    .comment-main {}
+    .comment-main > li { position: relative; min-height: 90px; padding: 20px 0; transition: all .2s;}
+    .comment-main > li:hover { background-color: #f6f9fa; }
+  .comment-num { position: relative; float: left; width: 43px; height: 73px; margin: 0 20px 0 42px; /*overflow: hidden;*/ }
+  .comment-num i { float: left; position: relative; font-size: 43px; color: #eff3f5; cursor: pointer; overflow: hidden;
+  /*color: #fff; */}
+  /*  ç²¾å½©è¯„è®º top ç‚¹èµžup åå¯¹down  */
+  .comment-num .top .num { top: 17px; }
+  .comment-num .top { cursor: default; }
+  .comment-num .up { height: 43px; }
+  .comment-num .down { height: 24px; margin-top: 6px; }
+  .comment-num .up:after,
+  .comment-num .down:after { content:""; position: absolute; border-style: solid; transition: all .2s;}
+  .comment-num .up:after { top: 10px; left: 15px; border-color: transparent transparent #bdc3c7 transparent; border-width: 0 6px 6px 6px; }
+  .comment-num .down:after { top: 7px; left: 15px; border-color: #bdc3c7 transparent transparent transparent; border-width: 6px 6px 0 6px;}
+  .comment-num .num { position: absolute; top: 24px; left: 0; width: 43px; font-size: 12px; color: #bdc3c7; text-align: center; }
+
+  .comment-num .up:hover:after { border-bottom-color: #3498db;}
+  .comment-num .down:hover:after { border-top-color: #3498db;}
+  .comment-num .up:hover .num { color: #3498db; }
+
+  .comment-num i.on { color: #3498db; }
+  .comment-num .up.on:after { border-bottom-color: #fff; }
+  .comment-num .down.on:after { border-top-color: #fff; }
+  .comment-num .on:hover .num,
+  .comment-num .on .num { color: #fff; }
+
+  .comment-num-down { position: absolute; top: 75px; left: 0; width: 43px; font-size: 12px; color: #e74c3c; text-align: center; opacity: 0;
+
+  }
+  .comment-num-down.on {
+    -webkit-animation: oppose 1s linear;
+    -moz-animation: oppose 1s linear;
+    -o-animation: oppose 1s linear;
+    animation: oppose 1s linear;
+  }
+  @-webkit-keyframes oppose
+  {
+    0% {opacity: 0; top: 60px;}
+    70% {opacity: 1; top: 75px;
+      -webkit-transform: scale(1.2);
+      transform: scale(1.2);
+    }
+    100% {opacity: 0; top: 75px;}
+  }
+  @-moz-keyframes oppose
+  {
+    0% {opacity: 0; top: 60px;}
+    70% {opacity: 1; top: 75px;}
+    100% {opacity: 0; top: 75px;}
+  }
+  @-o-keyframes oppose
+  {
+    0% {opacity: 0; top: 60px;}
+    70% {opacity: 1; top: 75px;}
+    100% {opacity: 0; top: 75px;}
+  }
+  @keyframes oppose
+  {
+    0% {opacity: 0; top: 60px;}
+    70% {opacity: 1; top: 75px;}
+    100% {opacity: 0; top: 75px;}
+  }
+
+  .comment-cont { float: left; width: 670px; margin-left: 20px; }
+  .comment-cont .user { margin-bottom: 2px; }
+  .comment-cont .user a { font-size: 14px; color: #95a5a6; font-weight: bold;}
+  .comment-cont .user a:hover { color: #3498db; text-decoration: underline; }
+  .comment-cont .user time { margin-left: 15px; font-size: 12px; color: #bdbdbd; }
+  .comment-cont .text { font-size: 16px; color: #34495e; line-height: 26px;overflow: hidden; }
+  .comment-cont .retext { border-left: 3px solid #3498db; padding-left: 12px;}
+  .comment-cont .retext p { font-size: 14px; color: #bdc3c7;overflow: hidden; }
+
+  .comment-cont .oper { margin-top: 15px; height: 30px; line-height: 30px; }
+  .comment-cont .oper a { float: left; padding: 0 22px; font-size: 12px; color: #34495e; }
+  .comment-cont .oper a.comment-toggle {  line-height: 28px; }
+  .comment-cont .oper a.p-replay{padding-left:0;}
+  .comment-cont .oper a.comment-toggle i { display: inline-block; margin-right: 5px; color:  #34495e; line-height: 30px; float: left; }
+  .comment-cont .oper a:hover,
+  .comment-cont .oper a:hover i { color: #3498db; border-color: #3498db;}
+  .comment-cont .oper-hide { display: none; }
+  .comment-cont .oper:hover .oper-hide { display: block; }
+
+
+  /*è¯¦æƒ…é¡µè¯„è®º*/
+  /*.works-comment { padding: 20px; }*/
+
+
+  /*å³ä¾§æ»‘åŠ¨*/
+  #portamento_container { float: right; position: relative; }
+  #portamento_container #sidebar {float:none; position:absolute;}
+  #portamento_container #sidebar.fixed { position:fixed; }
+
+  /*ä½œå“è¯¦æƒ…é¡µä¾§è¾¹æ */
+  .works-author-aside .info { width: 150px; margin-left: 10px; }
+  .works-author-aside .info h1 { height: 22px; line-height: 22px; }
+  .works-author-aside .info .name { display: inline-block; font-size: 16px; color: #2c3e50; font-weight: bold; line-height: 22px; }
+  .works-author-aside .info .name:hover{}
+  .works-author-aside .info .intro { font-size: 14px; color: #bdc3c7; line-height: 20px; }
+  .works-author-aside .btn-group { }
+  .works-author-aside .btn-item { float: left; margin-right: 10px; font-size: 12px; color: #34495e; }
+  .works-author-aside .btn-item i { margin-right: 5px; font-size: 14px; color: #34495e;}
+  .works-author-aside .btn-item i.icon-add-bold,
+  .works-author-aside .btn-item i.icon-close-bold { font-size: 12px; }
+  .works-author-aside .btn-item:hover { color: #3498db; }
+  .works-author-aside .btn-item:hover i { color: #3498db; }
+/*å…³æ³¨.icon-add-bold:before { content: "\e66e"; }
+å·²å…³æ³¨.icon-ok-sign:before { content: "\e627"; }
+ç›¸äº’å…³æ³¨.icon-relating-bold:before { content: "\e670"; }
+å–æ¶ˆå…³æ³¨.icon-close-bold:before { content: "\e66c"; }*/
+
+/*æ›´å¤šä½œå“æŽ¨è*/
+.works-look-aside  {}
+.works-look-aside h3 { margin-top: 20px; font-size: 14px; color: #9dacb9; line-height: 26px; }
+.works-look-aside h3 .more { float: right; font-size: 12px; color: #acbbc6; }
+.works-look-aside>li { float: left; position: relative; }
+.works-look-aside>li>a { display: block; width: 110px; height: 83px; overflow: hidden; }
+
+
+/*.works-look-aside .overlay { visibility: hidden; opacity: 0; position: absolute; top: 0; left: 0; width: 100%; height: 100%; background-color: rgba(255,255,255,.5); transition: all .2s;}
+.works-look-aside li a:hover .overlay { visibility: visible; opacity: 1; }
+.works-look-aside .overlay i { font-size: 50px; color: #34495e; line-height: 83px; }
+.works-look-aside .overlay span {display: block; text-align: center; font-size: 14px; color: #34495e; line-height: 83px; }*/
+
+/*å¿«æ·ç‚¹èµžè¯„è®º*/
+.works-oper-aside { margin-top: 20px; }
+.works-oper-aside .hexagon-btn { position: relative; float: left; overflow: hidden; width: 100px; height: 40px; }
+.works-oper-aside .hexagon-btn i { font-size: 100px; line-height: 40px; color: #bdc3c7; transition: color .2s;}
+.works-oper-aside .hexagon-btn .text { position: absolute; top: 0; left: 0; width: 100px; height: 40px; line-height: 40px; font-family: "Microsoft Yahei"; font-size: 14px; text-align: center; color: #34495e; transition: color .2s;}
+.works-oper-aside .hexagon-btn:hover i { color: #44a0dd;}
+.works-oper-aside .hexagon-btn:hover .text { color: #44a0dd;}
+
+.comment-quick { /*position: absolute; top: 65px; left: 0;*/ z-index: 1;display: none; margin-top: 50px;
+ /* opacity: 0; visibility: hidden; */
+/*    -webkit-transform: scale(0,0);
+       -moz-transform: scale(0,0);
+        -ms-transform: scale(0,0);
+         -o-transform: scale(0,0);
+            transform: scale(0,0);
+    -webkit-transform-origin: 80% -50px;
+       -moz-transform-origin: 80% -50px;
+        -ms-transform-origin: 80% -50px;
+         -o-transform-origin: 80% -50px;
+            transform-origin: 80% -50px;
+    -webkit-transition: all .5s;
+       -moz-transition: all .5s;
+        -ms-transition: all .5s;
+         -o-transition: all .5s;
+       transition: all .5s;*/ }
+/*.comment-quick.open { opacity: 1; visibility: visible; display: block;
+    -webkit-transform: scale(1,1);
+       -moz-transform: scale(1,1);
+        -ms-transform: scale(1,1);
+         -o-transform: scale(1,1);
+            transform: scale(1,1);
+    -webkit-transform-origin: 80% -50px;
+       -moz-transform-origin: 80% -50px;
+        -ms-transform-origin: 80% -50px;
+         -o-transform-origin: 80% -50px;
+         transform-origin: 80% -50px;}*/
+         .comment-quick textarea { width: 198px; height: 80px; padding: 10px; color: #6d6d6d; font-size: 14px;}
+         .comment-quick .btn { border-radius: 0; margin-top: 5px; padding: 0; width: 80px; height: 30px; line-height: 30px;}
+
+         /*æŽ¨èå¼¹å‡ºæ¡†*/
+         .modal-recommend { position: relative; width: 412px; margin: 0 auto; z-index: 101; height: 100px; padding: 15px 30px 30px; background-color: #fff; }
+         .modal-recommend .icon-close { position: absolute; top: 20px; right: 20px; font-size: 18px; color: #e4e9ed; cursor: pointer; }
+         .modal-recommend .popup-info h2 { margin-bottom: 10px; font-size: 24px; color: #2c3e50; text-indent: -10px; }
+         .modal-recommend .btn { width: 100px; height: 40px; border-radius: 0; }
+         .btn-level-1 { color: #fff; background-color: #e74c3c; }
+         .btn-level-1:hover{ color: #fff; background-color: #D73C2C; }
+         .btn-level-1:active{ background-color: #C72C1C; }
+         .btn-level-2 { color: #fff; background-color: #f18c14; }
+         .btn-level-2:hover{ color: #fff; background-color: #E17C04; }
+         .btn-level-2:active{ background-color: #D16BF4; }
+         .btn-level-3 { color: #fff; background-color: #f3bf21; }
+         .btn-level-3:hover{ color: #fff; background-color: #E3AF11; }
+         .btn-level-3:active{ background-color: #D39F01; }
+         
+         /*ç§ä¿¡ä¸¾æŠ¥å¼¹å‡ºæ¡†*/
+         .modal-letter { position: relative; width: 640px; margin: 0 auto; z-index: 101; height: 215px; padding: 15px 30px 30px; background-color: #fff; }
+         .modal-letter .icon-close { position: absolute; top: 20px; right: 20px; font-size: 18px; color: #e4e9ed; cursor: pointer; }
+         .modal-letter .popup-info h2 { margin-bottom: 10px; font-size: 24px; color: #2c3e50; text-indent: -10px; }
+         .modal-letter .popup-info h2 a { color: #2f99de; }
+         .modal-letter .popup-info label { margin-right: 28px; font-size: 14px; color: #7f8c8d; }
+         .modal-letter .popup-info label input { margin-right: 5px; }
+         .modal-letter .popup-text { width: 628px; height: 93px; padding: 10px 5px; font-size: 12px; color: #bdc3c7; }
+         .modal-letter .popup-text-let { height: 60px; margin-top: 10px; }
+         .modal-letter .btn { width: 100px; height: 40px; border-radius: 0; }
+         .modal-letter .tip { display: inline-block; margin-right: 10px; font-size: 12px; color: #bdc3c7; line-height: 40px; }
+              /* ç§ä¿¡æ·»åŠ å­—æ•°é™åˆ¶æé†’ 20160302 */
+              #textarea-letter + .word-warn {  position: absolute; top: auto; right: auto; bottom: -25px; left: 0; 
+                font-size: 12px; color: #bdc3c7;}
+              #textarea-letter + .word-warn span { color: #f39c12; font-weight: bold; }
+         /*è¡¨æƒ…æ¡†*/
+         .uiem-btn { z-index: 2; position: relative; width: 77px; height: 40px; font-size: 12px; color: #3499da; line-height: 40px; cursor: pointer; }
+         .uiem-btn .icon-face { float: left; margin-left: 15px; line-height: 40px; margin-right: 3px; font-size: 18px; color: #3499da; }
+         .uiem-box { z-index: 1; display: block; position: absolute; top: 0; left: 0; width: 344px; height: auto; background-color: #fff; border: 1px solid #e6eaee; box-shadow: 0 0 8px rgba(0,0,0,.15); }
+         .uiem-nav { width: 100%; height: 35px; border-bottom: 1px solid #e6eaee; }
+         .uiem-nav div{width:auto;height:35px;line-height: 35px;float: left;margin-left: 20px;cursor: pointer;color: #3499da;}
+         .face_author{width:auto; height:30px;clear: left;font-size: 12px;line-height: 30px;margin-left: 12px;margin-right: 12px;color: #3499da;}
+         #face_detail{border-bottom: 1px solid #e6eaee;}
+         .uiem-cont { margin: 12px;  padding: 1px 0 0 1px; }
+         .uiem-cont li { float: left; width: 22px; height: 22px; padding: 3px; margin: -1px 0 0 -1px; border: 1px solid #ececec; cursor: pointer; }
+         .uiem-cont li img { width: 22px; height: 22px; }
+         .uiem-cont li:hover,
+         .uiem-cont li.on { position: relative; z-index:2; list-style: none outside none; border-color: #aec9e8; background-color: #e4eef9; border-radius: 2px;}
+
+         /*ä¿®æ”¹è¯¦æƒ…é¡µè·Ÿéšæ»šåŠ¨æ·»åŠ æ ·å¼*/
+         /*å›ºå®šé¡¶éƒ¨æ ·å¼*/
+         .fixed{position: fixed!important;top:0!important;}
+         .fixed1{position: fixed!important;top:20px!important;}
+         .fixed2{position: fixed!important;top:20px!important;}
+         /*è¯¦æƒ…é¡µ*/
+         .uptop{width: 220px;height: 50px;display: none;}
+         .works-author-aside{position: absolute;top:0;}
+         /*  æ–°è¯¦æƒ…é¡µæ ·å¼*/
+         .zbd_warp{width: 220px;overflow-x: hidden;background:#fff;text-align: center;box-shadow: 0 0 3px rgba(0,0,0,.1);overflow-y: hidden; }
+         .Occupying{width:220px;height:87px;display: block;}
+         .zbd_warp .zbd_portrait a{display:inline-block;margin-top:30px; width:100px;height: 100px;background:#eee;border-radius: 50%;overflow: hidden; }
+          .zbd_warp .zbd_portrait a img{width: 100%;height: 100%;}
+         .zbd_warp .zbd_name{font-size: 16px;color: #34495e;font-weight: bold;margin-top: 5px;padding: 0 5px;}
+         .zbd_warp .zbd_name i{color: #3996db;font-size: 14px;display: inline-block;}
+         .zbd_warp .zbd_name i.icon-recommendation_designer{color: #e74c3c;}
+         /*.zbd_warp .zbd_name a{margin-left:14px; }*/
+         .zbd_warp .zbd_name a:hover{color: #34495e; }
+         .zbd_warp .zbd_introduce {font-size: 13px;color:#b4bbc0;width: 180px;/*height: 20px;*/overflow-y: hidden; overflow-x: hidden;  padding: 0 20px 0 20px;  text-overflow: ellipsis;white-space: nowrap;}
+         .zbd_warp .zbd_introduce a:hover{color:#b4bbc0;}
+         .zbd_warp .zbd_medal{margin-top: 7px;}
+         .zbd_warp .zbd_medal img{width: 27px;height: 27px;}
+         .zbd_warp .zbd_foot{position: absolute;bottom: 0;left:0;}
+         .zbd_warp .zbd_foot a{display:block;width:49.7%;height:55px;border: 1px solid #eff3f5;border-left:none;border-bottom:none; background-color: #f8f8f8; text-align: center;}
+         .zbd_warp .zbd_foot .zbd_right{border-right: none;}
+         .zbd_warp .zbd_foot a b{margin-top: -2px; overflow: hidden;  display:block;color: #34495e;font-size: 20px;font-weight: bold;width:109.5px;text-align: center;}
+         .zbd_warp .zbd_foot a em{  color: #acbbc6;font-size: 12px;width: 109.5px;display:block;padding-top: 5px;text-align: center;}
+         /*åŠ å…³æ³¨*/
+         .zbd_focus{display:inline-block;width:38px;height: 38px; position: absolute;left: 50%;margin-left:-19px;bottom:36px;z-index: 6;text-align: center;line-height:38px; }
+         .z_green:before{color: #1abc9c!important;}/*å…³æ³¨*/
+         .z_red:before{color: #e74c3c!important;}/*å–æ¶ˆå…³æ³¨*/
+         .z_orange:before{color:#e67e22!important;}/*äº’ç›¸å…³æ³¨*/
+         .z_blue:before{color: #3498db !important;}/*åŠ å…³æ³¨*/
+         .zbd_focus .iconfont{display: block;height: 42px;width: 42px;line-height: 42px;position: relative}
+         .zbd_focus .iconfont:before { content: "\e728"; font-size:42px; line-height: 42px; color: #3498db; }
+
+         .zbd_focus .icon-add-bold,.zbd_focus .icon-ok-sign,.zbd_focus .icon-relating-bold,.zbd_focus .icon-close-bold{color:#fff;font-size: 15px;position: relative;bottom: 52px;z-index: 10;}
+         .zbd_focus .icon-add-bold,.zbd_focus .icon-ok-sign,.zbd_focus .icon-relating-bold,.zbd_focus .icon-close-bold{
+             display: block;
+             position: absolute;
+             left: 50%;
+             top: 50%;
+             margin-left: -7.5px;
+             margin-top: -7.5px;
+         }
+         /*ç‚¹èµžè¯„è®º*/
+         .zbd_comments{width: 220px;height: 50px;margin-top: 10px;background-color: #fff;box-shadow: 0 0 3px rgba(0,0,0,.1); }
+         .zbd_comments a{display:block;width:49.7%;background-color: #fff; text-align: center;color: #acbbc6;font-size: 12px;border-bottom: 1px solid #fff}
+/*         .zbd_comments .zbd_two:hover{color:#34495e;}*/
+         .zbd_comments a em{color:#34495e;}
+         .zbd_comments .zbd{color:#34495e; }
+         .zbd_comments .zbd em{font-weight:bold;}
+         .zbd_comments a em{margin-top: -2px; overflow: hidden;font-size: 16px;height: 20px;  width:99%;display: block;}
+         .zbd_comments a b{width: 109.5px;display: block;padding-top: 5px}
+         .zbd_comments .zbd_one{height: 49px; border-right:1px solid #eff3f5;position: relative;z-index: 6;}
+         .zbd_comments .zbd_one i{display:inline-block;*display:inline;*zoom:1;}
+         .zbd_txt::-webkit-input-placeholder {font-size: 14px;}
+         .zbd_txt::-moz-input-placeholder {font-size: 14px;}
+         /* .zbd_comments .zbd_one:before {content: "";position: absolute;left: -12px;top: 15px;border: solid transparent;border-right-color: #fff;border-width: 10px 12px 10px 0px;z-index: 5;}*/
+         /*å°ä¸‰è§’*/
+         .arrow-shadow{position: absolute;top:15px;left: -5px;z-index:3;background-color:#fff;width: 20px;height: 20px;box-shadow: 0 0 3px rgba(0,0,0,.1);
+          transform:rotate(45deg);
+          -ms-transform:rotate(45deg);   /* IE 9 */
+          -moz-transform:rotate(45deg);  /* Firefox */
+          -webkit-transform:rotate(45deg); /* Safari å’Œ Chrome */
+          -o-transform:rotate(45deg);}
+
+         .zbd_write{height: 150px;width: 220px;background-color: #fff;display:none;box-shadow: 0 3px 3px rgba(0,0,0,.1);}
+         .zbd_write .zbd_txt{width: 200px;height: 90px;border: none;padding: 10px;}
+         .zbd_write .zbd_txt:focus{box-shadow: none;}
+         .zbd_write .zbd_btn{position: absolute;bottom: 0;left:0; width: 220px;height: 40px;text-align: center;color: #fff;background-color: #3498db;font-size: 14px;}
+         /*è¯„è®ºæœ€åº•éƒ¨*/
+         .zbd_item{margin-bottom: 30px;}
+/*
+ *
+ * 20160214 è¯¦æƒ…å³ä¾§ä¿®æ”¹
+ *
+ */
+  .zbd_center .rele .img{width: 220px;height: 165px;overflow: hidden;}
+  .zbd_center .rele .img>a{display:block;position: relative;width: 220px;height: 165px;}
+  .zbd_center .rele .img>a img{width: 100%;height: 100%;}
+  .zbd_center .rele .img>a .h-aside-show{text-align:center;display: table;width:186px;height: 100%;padding: 0 17px;}
+  .zbd_center .rele .img>a .h-aside-show p{ display: table-cell;vertical-align: middle; width: 186px;height: 84px; text-align: center;color: #fff;font-size: 18px;overflow: hidden;}
+  .zbd_center .rele .img>a:hover .h-aside-show { opacity: 1; visibility: visible; }
+    /* æ–‡ç« åˆ—è¡¨*/
+  .zbd_center .article{}
+  .zbd_center .article h3{margin-top: 15px;}
+  .zbd_center .article h3 em{cursor: pointer;color: #3498db;font-size: 12px;}
+  .zbd_center .article h3 em i{font-size: 14px;color: #3498db;padding-right: 5px;height: 26px;line-height: 26px;}
+  
+  .zbd_center .article .cont{box-shadow: 0 0 3px rgba(0,0,0,.1);}
+  .zbd_center .article .cont .top{width: 205px; background: #fff;border-bottom: 1px solid #eff3f5;padding: 10px 0 10px 15px;}
+  .zbd_center .article .cont .top .img{margin-top: 4px; width:70px;height: 52px;overflow: hidden;margin-right:10px;}
+  .zbd_center .article .cont .top .img img{width:100%;height:100%;}
+  .zbd_center .article .cont .top .tit .h1{font-size: 12px;color: #2c3e50;width: 110px;height:32px;overflow: hidden;line-height: 1.5; padding-bottom: 7px; }
+  .zbd_center .article .cont .top .tit .time{ color: #2c3e50;opacity: 0.5;font-size: 12px;}
+  
+  .zbd_center .article .cont .down{background: #f8f8f8;padding:10px 10px 3px 15px;}
+  .zbd_center .article .cont .down>ul>li{padding-bottom: 10px;}
+  .zbd_center .article .cont .down>ul>li>i{color:#2c3e50;font-size: 12px;}
+  .zbd_center .article .cont .down>ul>li>a{color:#2c3e50;font-size: 12px;margin-left: 5px;width: 175px;}
+  .zbd_center .article .cont .down>ul>li:hover>i{color:#3498db;} 
+  .zbd_center .article .cont .down>ul>li:hover>a{color:#3498db;text-decoration:underline;} 
+/*
+ *
+ * 20160128 æŽ¨èè®¾è®¡å¸ˆä¿®æ”¹
+ *
+ */
+.hmember {
+  margin-left: -20px; margin-top: 20px;
+}
+.hmember li {
+  float: left; width: 580px; margin-left: 20px;
+}
+.hmember .cover {
+  display: block;
+  width: 280px; height: 210px;
+}
+.hmember .info {
+  width: 270px; height: 183px; padding: 27px 30px 0 0;
+  background-color: #fff; 
+}
+.hmember .info .ribbon {
+  position: absolute; right: 5px; top: -5px;
+  background: url("../img/ribbon_blue.svg") no-repeat center center;
+  background-size: 55px; width: 35px; height: 55px;
+}
+.hmember .author {
+  width: 240px; padding-left: 30px;
+}
+.hmember .avatar {
+  display: block; width: 100px; height: 100px; margin-right: 20px;
+}
+.hmember .intro {
+  display: table;
+}
+.hmember .intro > div {
+  display: table-cell; vertical-align: middle; height: 100px;
+}
+.hmember .intro .name {
+  font-size: 16px; color: #34495e; line-height: 24px; width: 120px;
+}
+.hmember .intro .txt {
+  font-size: 14px; color: #b4bbc0; line-height: 22px; width: 120px;
+}
+.hmember .intro .medal {
+  width: 120px;
+}
+.hmember .num {
+  width: 300px; background-color: #f8f8f8; margin-top: 27px; height: 55px;
+  border-top: 1px solid #eff3f5;
+} 
+.hmember .num .item {
+  float: left;
+  width: 99px; border-left: 1px solid #eff3f5; text-align: center;
+}  
+.hmember .num .item span {
+  display: block; padding-top: 5px;
+  font-size: 12px; color: #acbbc6; line-height: 18px;
+}
+.hmember .num .item strong {
+  display: block; padding-bottom: 3px;
+  font-size: 20px; color: #34495e; line-height: 30px; font-weight: bold;
+}
+/*è®¤è¯*/
+/*è®¤è¯æˆåŠŸ*/
+.cert{color: #3996db;font-size: 12px;}
+.cert1{color: #3996db;font-size: 14px;}
+.cert1{color: #3996db;font-size: 16px;}
+.mar2{margin-left: 2px;}
+/*å·²å…·å¤‡æ¡ä»¶ï¼Œä½†æ˜¯æœªè®¤è¯æˆåŠŸ æœ‰ä¸€ä¸ªæŽ¨èä½œå“ ç°è‰²*/
+.certg{color:#b8c4ce!important;}
+/*å·²å…·å¤‡æ¡ä»¶ï¼Œä½†æ˜¯æœªè®¤è¯æˆåŠŸ æœ‰ä¸€ä¸ªæŽ¨èä½œå“*/
+.rote180{
+  transform:rotate(180deg);
+  -ms-transform:rotate(180deg); /* Internet Explorer */
+  -moz-transform:rotate(180deg); /* Firefox */
+  -webkit-transform:rotate(180deg); /* Safari å’Œ Chrome */
+  -o-transform:rotate(180deg); /* Opera */
+  display: inline-block;
+}
+
+
+/*æ”¯ä»˜å¼¹å‡ºæ¡†*/
+
+   
+ .modal-pay { position: relative; width: 425px; margin: 0 auto; z-index: 101;  padding: 40px 60px; background-color: #fff; }
+ .modal-pay .icon-close { position: absolute; top: 15px; right: 15px; font-size: 28px; color: #e4e9ed; cursor: pointer; }
+ .modal-pay p:nth-of-type(1){font-size: 20px;margin-left: 2px;color: #000000;font-weight: bold;}
+ .modal-pay p:nth-of-type(2){font-size: 16px;margin-left: 2px;color: #95a5a6;}
+ .modal-pay p:nth-of-type(3){font-size: 14px;margin-left: 2px;color: #95a5a6;text-align: center;}
+ .modal-pay .mtm{padding: 26px 0 22px 0;}
+ #p-title .icon-shenqing{
+     color: #e74c3c;
+ }
+ @media screen and (max-width: 1440px) {
+     .shengdan{
+         background: none!important;
+     }
+ }
+
+#p-content {
+    width:600px;
+    margin:auto;
+}
+    </style>
+</head>
+
+<body>
+    <div class="works-cont editor-style ui-theme" id="p-content">
+        <h1>200+值得收藏的设计师资源站</h1>
+        <p style="width: 600px; margin: 0px auto;"></p>
+        <p style="width: 600px; margin: 0px auto;">众所周知，玩儿设计素材很重要。绝大多数的设计作品的背后都有着多种多样素材作为支撑，图片、字体、图标等素材是设计作品中直观可见的组成部分</p>
+        <p style="width: 600px; margin: 0px auto;"></p>
+        <br/>
+        <br/>
+        <p style="width: 600px; margin: 0px auto;">首先是大家必逛的四大天王护法</p>
+        <p style="width: 600px; margin: 0px auto;">
+            <a href="http://www.ui.cn/">http://www.ui.cn/</a>
+        </p>
+        <p style="width: 600px; margin: 0px auto;">
+            <a href="https://www.behance.net/">https://www.behance.net/</a>
+        </p>
+        <p style="width: 600px; margin: 0px auto;">
+            <a href="https://dribbble.com/">https://dribbble.com/</a>
+        </p>
+        <p style="width: 600px; margin: 0px auto;">
+            <a href="https://www.pinterest.com/">https://www.pinterest.com/</a>
+        </p>
+        <p style="width: 600px; margin: 0px auto;">
+            <br>
+        </p>
+        <p style="width: 600px; margin: 0px auto;">
+            <br>
+        </p>
+        <p style="width: 600px; margin: 0px auto;">
+            <a href="https://material.uplabs.com/">https://material.uplabs.com/</a>&nbsp; &nbsp;大家好，我是MD大法左护法Kiriya</p>
+        <p style="width: 600px; margin: 0px auto;">
+            <a href="https://uimovement.com/">https://uimovement.com/</a>&nbsp; &nbsp; &nbsp; &nbsp;交互动效</p>
+        <p style="width: 600px; margin: 0px auto;">
+            <a href="http://365awesomedesigners.com/">http://365awesomedesigners.com/</a>&nbsp;&nbsp;&nbsp;&nbsp;每天推一位设计师的作品</p>
+        <p style="width: 600px; margin: 0px auto;">
+            <a href="https://thefwa.com/">https://thefwa.com/</a></p>
+        <p style="width: 600px; margin: 0px auto;">
+            <br>
+        </p>
+        <p style="width: 600px; margin: 0px auto;">
+            <a href="http://collectui.com/">http://collectui.com/</a>&nbsp;这里有超多UI控件可以参考</p>
+        <p style="width: 600px; margin: 0px auto;">
+            <a href="https://uimovement.com/">https://uimovement.com/</a>&nbsp;同上，超多控件，要啥有啥</p>
+        <p style="width: 600px; margin: 0px auto;">
+            <br>
+        </p>
+        <p style="width: 600px; margin: 0px auto;">
+            <a href="http://anyway.fm/">http://anyway.fm/</a>&nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; JJ ying前辈和Leon大神的设计播客</p>
+        <p
+            style="width: 600px; margin: 0px auto;">
+            <a href="http://www.lizhi.fm/1852153/">http://www.lizhi.fm/1852153/</a>&nbsp;谈字体的播客</p>
+            <p style="width: 600px; margin: 0px auto;">
+                <a href="http://podcast.uxcoffee.co/">http://podcast.uxcoffee.co/</a>&nbsp;&nbsp; &nbsp; 用户体验类的博客</p>
+            <p style="width: 600px; margin: 0px auto;">
+                <a href="https://www.yineng.fm/">https://www.yineng.fm/</a>&nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp;异能电台</p>
+            <p style="width: 600px; margin: 0px auto;">这四个播客都是中文的~</p>
+            <p style="width: 600px; margin: 0px auto;">
+                <br>
+            </p>
+            <p style="width: 600px; margin: 0px auto;">
+                <a href="https://color.adobe.com/">https://color.adobe.com/</a>&nbsp; &nbsp;还有我大啊逗比的配色</p>
+            <p style="width: 600px; margin: 0px auto;">
+                <a href="https://uigradients.com/">https://uigradients.com/</a>&nbsp; &nbsp; 一个渐变配色网站</p>
+            <p style="width: 600px; margin: 0px auto;">
+                <a href="http://www.colordic.org">http://www.colordic.org</a>&nbsp; &nbsp; 日系配色</p>
+            <p style="width: 600px; margin: 0px auto;">
+                <a href="http://www.colorhunt.co/">http://www.colorhunt.co/</a>&nbsp;还是配色</p>
+            <p style="width: 600px; margin: 0px auto;">
+                <br>
+            </p>
+            <p style="width: 600px; margin: 0px auto;">
+                <br>
+            </p>
+            <p style="width: 600px; margin: 0px auto;">——————————————————————</p>
+            <p style="width: 600px; margin: 0px auto;">图片素材</p>
+            <p style="width: 600px; margin: 0px auto;">
+                <strong>免费资源</strong>
+            </p>
+            <p style="width: 600px; margin: 0px auto;">Unsplash —
+                <a href="http://unsplash.com/" target="_blank">www.unsplash.com</a>
+            </p>
+            <p style="width: 600px; margin: 0px auto;">Picjumbo —
+                <a href="http://picjumbo.com/" target="_blank">www.picjumbo.com</a>
+            </p>
+            <p style="width: 600px; margin: 0px auto;">Gratisography —
+                <a href="http://www.gratisography.com/" target="_blank">www.gratisography.com</a>
+            </p>
+            <p style="width: 600px; margin: 0px auto;">Superfamous —
+                <a href="http://superfamous.com/" target="_blank">www.superfamous.com</a>
+            </p>
+            <p style="width: 600px; margin: 0px auto;">Little Visuals —
+                <a href="http://littlevisuals.co/" target="_blank">www.littlevisuals.co</a>
+            </p>
+            <p style="width: 600px; margin: 0px auto;">Split Shire —
+                <a href="http://splitshire.com/" target="_blank">www.splitshire.com</a>
+            </p>
+            <p style="width: 600px; margin: 0px auto;">Pixabay —
+                <a href="http://pixabay.com/" target="_blank">www.pixabay.com</a>
+            </p>
+            <p style="width: 600px; margin: 0px auto;">I’m Free —
+                <a href="http://www.imcreator.com/free" target="_blank">www.imcreator.com/free</a>
+            </p>
+            <p style="width: 600px; margin: 0px auto;">New Old Stock —
+                <a href="http://nos.twnsnd.co/" target="_blank">www.nos.twnsnd.co</a>
+            </p>
+            <p style="width: 600px; margin: 0px auto;">Function Free Photos —
+                <a href="http://wefunction.com/category/free-photos/" target="_blank">http://wefunction.com/category/free-photos/</a>
+            </p>
+            <p style="width: 600px; margin: 0px auto;">Paul Jarvis Free Photos —
+                <a href="http://pjrvs.com/a/photos" target="_blank">http://pjrvs.com/a/photos</a>
+            </p>
+            <p style="width: 600px; margin: 0px auto;">Zoomy Images —
+                <a href="http://zoomyimages.com/" target="_blank">http://zoomyimages.com/</a>
+            </p>
+            <p style="width: 600px; margin: 0px auto;">
+                <br>
+            </p>
+            <p style="width: 600px; margin: 0px auto;">Dollar Photo Club —
+                <a href="http://www.dollarphotoclub.com/" target="_blank">http://www.dollarphotoclub.com</a>
+            </p>
+            <p style="width: 600px; margin: 0px auto;">Compfight —
+                <a href="http://compfight.com/" target="_blank">www.compfight.com</a>
+            </p>
+            <p style="width: 600px; margin: 0px auto;">Stocksy —
+                <a href="http://www.stocksy.com/" target="_blank">www.stocksy.com</a>
+            </p>
+            <p style="width: 600px; margin: 0px auto;">Placeit Product Shots —
+                <a href="https://placeit.net/#!/stages/325" target="_blank">www.placeit.net</a>
+            </p>
+            <p style="width: 600px; margin: 0px auto;">iStockphoto —
+                <a href="http://istockphoto.com/" target="_blank">http://istockphoto.com</a>
+            </p>
+            <p style="width: 600px; margin: 0px auto;">offset —
+                <a href="http://www.offset.com/" target="_blank">http://www.offset.com</a>
+            </p>
+            <p style="width: 600px; margin: 0px auto;">Corbis —
+                <a href="http://www.corbisimages.com/" target="_blank">http://www.corbisimages.com</a>
+            </p>
+            <p style="width: 600px; margin: 0px auto;">Facebox —
+                <a href="http://facebox.io/" target="_blank">http://facebox.io</a>
+            </p>
+            <h4>排版设计</h4>
+            <p style="width: 600px; margin: 0px auto;">Okay Type —
+                <a href="http://okaytype.com/" target="_blank">www.okaytype.com</a>
+            </p>
+            <p style="width: 600px; margin: 0px auto;">Typekit —
+                <a href="http://www.typekit.com/" target="_blank">www.typekit.com</a>
+            </p>
+            <p style="width: 600px; margin: 0px auto;">My Fonts —
+                <a href="http://www.myfonts.com/" target="_blank">www.myfonts.com</a>
+            </p>
+            <p style="width: 600px; margin: 0px auto;">Fonts —
+                <a href="http://www.fonts.com/" target="_blank">www.fonts.com</a>
+            </p>
+            <p style="width: 600px; margin: 0px auto;">Font Squirrel —
+                <a href="http://www.fontsquirrel.com/" target="_blank">www.fontsquirrel.com</a>
+            </p>
+            <p style="width: 600px; margin: 0px auto;">Da Font —
+                <a href="http://www.dafont.com/" target="_blank">www.dafont.com</a>
+            </p>
+            <p style="width: 600px; margin: 0px auto;">Google Fonts —
+                <a href="http://www.google.com/fonts" target="_blank">www.google.com/fonts</a>
+            </p>
+            <p style="width: 600px; margin: 0px auto;">1001 Free Fonts —
+                <a href="http://www.1001freefonts.com/" target="_blank"> www.1001freefonts.com</a>
+            </p>
+            <p style="width: 600px; margin: 0px auto;">Lost Type Co-op —
+                <a href="http://www.losttype.com/" target="_blank">www.losttype.com</a>
+            </p>
+            <p style="width: 600px; margin: 0px auto;">Ico Moon —
+                <a href="http://icomoon.io/" target="_blank">www.icomoon.io</a>
+            </p>
+            <p style="width: 600px; margin: 0px auto;">Font-To-Width —
+                <a href="http://font-to-width.com/" target="_blank">http://font-to-width.com/</a>
+            </p>
+            <h4>
+                <br>
+            </h4>
+            <h4>视觉稿设计工具</h4>
+            <p style="width: 600px; margin: 0px auto;">InVision —
+                <a href="http://www.invisionapp.com/" target="_blank">www.invisionapp.com</a>
+            </p>
+            <p style="width: 600px; margin: 0px auto;">Mockupr —
+                <a href="http://mockupr.com/" target="_blank">www.mockupr.com</a>
+            </p>
+            <p style="width: 600px; margin: 0px auto;">Flinto —
+                <a href="https://www.flinto.com/" target="_blank">www.flinto.com</a>
+            </p>
+            <p style="width: 600px; margin: 0px auto;">Flinto Icon Strike! —
+                <a href="https://www.flinto.com/strike" target="_blank">www.flinto.com/strike</a>
+            </p>
+            <p style="width: 600px; margin: 0px auto;">Webflow —
+                <a href="https://webflow.com/" target="_blank">www.webflow.com</a>
+            </p>
+            <p style="width: 600px; margin: 0px auto;">Mockuuups —
+                <a href="http://www.mockuuups.com/" target="_blank">www.mockuuups.com</a>
+            </p>
+            <p style="width: 600px; margin: 0px auto;">Red Pen —
+                <a href="https://redpen.io/" target="_blank">https://redpen.io</a>
+            </p>
+            <p style="width: 600px; margin: 0px auto;">PSD Covers —
+                <a href="http://www.psdcovers.com/" target="_blank">http://www.psdcovers.com/</a>
+            </p>
+            <h4>
+                <br>
+            </h4>
+            <h4>线框图</h4>
+            <p style="width: 600px; margin: 0px auto;">Moqups —
+                <a href="https://moqups.com/" target="_blank">www.moqups.com</a>
+            </p>
+            <p style="width: 600px; margin: 0px auto;">Wireframe.cc —
+                <a href="https://wireframe.cc/" target="_blank">ww.wireframe.cc</a>
+            </p>
+            <p style="width: 600px; margin: 0px auto;">Mockflow —
+                <a href="http://www.mockflow.com/" target="_blank">www.mockflow.com</a>
+            </p>
+            <p style="width: 600px; margin: 0px auto;">Mockingbird —
+                <a href="https://gomockingbird.com/" target="_blank">www.gomockingbird.com</a>
+            </p>
+            <p style="width: 600px; margin: 0px auto;">Flair Builder —
+                <a href="http://flairbuilder.co/" target="_blank">http://flairbuilder.co</a>
+            </p>
+            <p style="width: 600px; margin: 0px auto;">Balsamiq —
+                <a href="http://balsamiq.com/products/mockups/" target="_blank">http://balsamiq.com/products/mockups/</a>
+            </p>
+            <p style="width: 600px; margin: 0px auto;">Axure —
+                <a href="http://www.axure.com/" target="_blank">http://www.axure.com/</a>
+            </p>
+            <p style="width: 600px; margin: 0px auto;">Justinmind —
+                <a href="http://www.justinmind.com/" target="_blank">http://www.justinmind.com/</a>
+            </p>
+            <p style="width: 600px; margin: 0px auto;">UX Pin —
+                <a href="http://uxpin.com/" target="_blank">http://uxpin.com</a>
+            </p>
+            <h4>
+                <br>
+            </h4>
+            <h4>原型设计</h4>
+            <p style="width: 600px; margin: 0px auto;">InVision —
+                <a href="http://www.invisionapp.com/" target="_blank">http://www.invisionapp.com</a>
+            </p>
+            <p style="width: 600px; margin: 0px auto;">Mixture —
+                <a href="http://mixture.io/" target="_blank">www.mixture.io</a>
+            </p>
+            <p style="width: 600px; margin: 0px auto;">Flinto —
+                <a href="https://www.flinto.com/" target="_blank">www.flinto.com</a>
+            </p>
+            <p style="width: 600px; margin: 0px auto;">Gridset —
+                <a href="https://gridsetapp.com/" target="_blank">www.gridsetapp.com</a>
+            </p>
+            <p style="width: 600px; margin: 0px auto;">Marvel —
+                <a href="https://marvelapp.com/" target="_blank">https://marvelapp.com</a>
+            </p>
+            <p style="width: 600px; margin: 0px auto;">Webflow —
+                <a href="https://webflow.com/" target="_blank">https://webflow.com</a>
+            </p>
+            <p style="width: 600px; margin: 0px auto;">Red Pen —
+                <a href="https://redpen.io/" target="_blank">https://redpen.io</a>
+            </p>
+            <p style="width: 600px; margin: 0px auto;">Proto —
+                <a href="http://proto.io/" target="_blank">http://proto.io</a>
+            </p>
+            <p style="width: 600px; margin: 0px auto;">Iconii —
+                <a href="http://iconii.com/" target="_blank">http://iconii.com</a>
+            </p>
+            <p style="width: 600px; margin: 0px auto;">Macaw —
+                <a href="http://macaw.co/" target="_blank">http://macaw.co/</a>
+            </p>
+            <p style="width: 600px; margin: 0px auto;">Froont —
+                <a href="http://froont.com/" target="_blank">http://froont.com</a>
+            </p>
+            <h4>
+                <br>
+            </h4>
+            <h4>响应式设计</h4>
+            <p style="width: 600px; margin: 0px auto;">Responsive.is —
+                <a href="http://responsive.is/typecast.com" target="_blank">http://responsive.is/typecast.com</a>
+            </p>
+            <p style="width: 600px; margin: 0px auto;">Gridpak —
+                <a href="http://gridpak.com/" target="_blank">www.gridpak.com</a>
+            </p>
+            <p style="width: 600px; margin: 0px auto;">Responsive Nav —
+                <a href="http://responsive-nav.com/" target="_blank">www.responsive-nav.com</a>
+            </p>
+            <p style="width: 600px; margin: 0px auto;">Off Screen Navigation —
+                <a href="http://tympanus.net/Development/MultiLevelPushMenu/#" target="_blank">http://tympanus.net/Development/MultiLevelPushMenu/</a>
+            </p>
+            <p style="width: 600px; margin: 0px auto;">Responsive Web Design Test —
+                <a href="http://designmodo.com/responsive-test/" target="_blank">www.designmodo.com/responsive-test/</a>
+            </p>
+            <p style="width: 600px; margin: 0px auto;">Media Queries —
+                <a href="http://mediaqueri.es/" target="_blank">www.mediaqueri.es</a>
+            </p>
+            <p style="width: 600px; margin: 0px auto;">Foundation by Zurb —
+                <a href="http://foundation.zurb.com/" target="_blank">www.foundation.zurb.com</a>
+            </p>
+            <p style="width: 600px; margin: 0px auto;">Jetstrap —
+                <a href="https://jetstrap.com/" target="_blank">www.jetstrap.com</a>
+            </p>
+            <p style="width: 600px; margin: 0px auto;">Webflow —
+                <a href="https://webflow.com/" target="_blank">www.webflow.com</a>
+            </p>
+            <p style="width: 600px; margin: 0px auto;">Gridset —
+                <a href="https://gridsetapp.com/" target="_blank">www.gridsetapp.com</a>
+            </p>
+            <p style="width: 600px; margin: 0px auto;">BrowserStack —
+                <a href="http://www.browserstack.com/" target="_blank">www.browserstack.com</a>
+            </p>
+            <p style="width: 600px; margin: 0px auto;">Sassaparilla —
+                <a href="http://sass.fffunction.co/" target="_blank">http://sass.fffunction.co</a>
+            </p>
+            <p style="width: 600px; margin: 0px auto;">Sidebar Transitions —
+                <a href="http://tympanus.net/Development/SidebarTransitions/" target="_blank">http://tympanus.net/Development/SidebarTransitions/</a>
+            </p>
+            <p style="width: 600px; margin: 0px auto;">Dimensions (Chrome Extension) —
+                <a href="https://chrome.google.com/webstore/detail/dimensions/hdmihohhdcbejdkidbfijmfehjbnmifk?hl=en"
+                    target="_blank">https://chrome.google.com/webstore/detail/dimensions/hdmihohhdcbejdkidbfijmfehjbnmifk?hl=en</a>
+            </p>
+            <p style="width: 600px; margin: 0px auto;">Responsive Grid System —
+                <a href="http://responsive.gs/" target="_blank">http://responsive.gs/</a>
+            </p>
+            <p style="width: 600px; margin: 0px auto;">Responsi —
+                <a href="http://respon.si/" target="_blank">http://respon.si</a>
+            </p>
+            <h4>
+                <br>
+            </h4>
+            <h4>色彩</h4>
+            <p style="width: 600px; margin: 0px auto;">0 to 255 —
+                <a href="http://0to255.com/" target="_blank">www.0to255.com</a>
+            </p>
+            <p style="width: 600px; margin: 0px auto;">Colour Lovers —
+                <a href="http://www.colourlovers.com/" target="_blank">www.colourlovers.com</a>
+            </p>
+            <p style="width: 600px; margin: 0px auto;">Brand Colors —
+                <a href="http://brandcolors.net/" target="_blank">www.brandcolors.net</a>
+            </p>
+            <p style="width: 600px; margin: 0px auto;">Adobe Kuler Color Wheel —
+                <a href="https://kuler.adobe.com/create/color-wheel/" target="_blank">https://kuler.adobe.com/create/color-wheel/</a>
+            </p>
+            <p style="width: 600px; margin: 0px auto;">Color Scheme Designer —
+                <a href="http://colorschemedesigner.com/" target="_blank">www.colorschemedesigner.com</a>
+            </p>
+            <p style="width: 600px; margin: 0px auto;">Hex to RGB Converter —
+                <a href="http://hex.colorrrs.com/" target="_blank">http://hex.colorrrs.com</a>
+            </p>
+            <p style="width: 600px; margin: 0px auto;">Coleure —
+                <a href="http://coleure.com/" target="_blank">http://coleure.com/</a>
+            </p>
+            <p style="width: 600px; margin: 0px auto;">Colllor —
+                <a href="http://colllor.com/" target="_blank">http://colllor.com/</a>
+            </p>
+            <p style="width: 600px; margin: 0px auto;">Palette for Chrome —
+                <a href="https://chrome.google.com/webstore/detail/palette-for-chrome/oolpphfmdmjbojolagcbgdemojhcnlod"
+                    target="_blank">https://chrome.google.com/webstore/detail/palette-for-chrome/oolpphfmdmjbojolagcbgdemojhcnlod</a>
+            </p>
+            <h4>
+                <br>
+            </h4>
+            <h4>CSS</h4>
+            <p style="width: 600px; margin: 0px auto;">Animate.css —
+                <a href="http://www.daneden.me/animate" target="_blank">www.daneden.me/animate</a>
+            </p>
+            <p style="width: 600px; margin: 0px auto;">CSS3 Animation Cheat Sheat —
+                <a href="http://www.justinaguilar.com/animations/index.html" target="_blank">http://www.justinaguilar.com/animations/index.html</a>
+            </p>
+            <p style="width: 600px; margin: 0px auto;">Can I Use? —
+                <a href="http://caniuse.com/" target="_blank">www.caniuse.com</a>
+            </p>
+            <p style="width: 600px; margin: 0px auto;">Animation Fill Code —
+                <a href="http://animationfillcode.com/" target="_blank">www.animationfillcode.com</a>
+            </p>
+            <p style="width: 600px; margin: 0px auto;">Pure —
+                <a href="http://purecss.io/" target="_blank">http://purecss.io/</a>
+            </p>
+            <p style="width: 600px; margin: 0px auto;">The Magic of CSS —
+                <a href="http://adamschwartz.co/magic-of-css/" target="_blank">http://adamschwartz.co/magic-of-css/</a>
+            </p>
+            <h4>
+                <br>
+            </h4>
+            <h4>HTML 5</h4>
+            <p style="width: 600px; margin: 0px auto;">HTML5 Please —
+                <a href="http://html5please.com/" target="_blank">www.html5please.com</a>
+            </p>
+            <p style="width: 600px; margin: 0px auto;">Can I Use? —
+                <a href="http://caniuse.com/" target="_blank">www.caniuse.com</a>
+            </p>
+            <h4>
+                <br>
+            </h4>
+            <h4>JavaScript/jQuery</h4>
+            <p style="width: 600px; margin: 0px auto;">Unheap —
+                <a href="http://www.unheap.com/" target="_blank">http://www.unheap.com</a>
+            </p>
+            <p style="width: 600px; margin: 0px auto;">Touchy Js —
+                <a href="http://touchyjs.org/" target="_blank">http://touchyjs.org/</a>
+            </p>
+            <p style="width: 600px; margin: 0px auto;">FitText —
+                <a href="http://fittextjs.com/" target="_blank">http://fittextjs.com</a>
+            </p>
+            <p style="width: 600px; margin: 0px auto;">Touche.js —
+                <a href="http://benhowdle.im/touche/" target="_blank">http://benhowdle.im/touche/</a>
+            </p>
+            <p style="width: 600px; margin: 0px auto;">Cortado.js —
+                <a href="http://benhowdle.im/cortado/" target="_blank">http://benhowdle.im/cortado/</a>
+            </p>
+            <p style="width: 600px; margin: 0px auto;">FlickFeed —
+                <a href="http://benhowdle.im/flickfeed/" target="_blank">http://benhowdle.im/flickfeed/</a>
+            </p>
+            <p style="width: 600px; margin: 0px auto;">Heisenburg.js —
+                <a href="http://heisenbergjs.github.io/heisenberg/" target="_blank">http://heisenbergjs.github.io/heisenberg/</a>
+            </p>
+            <p style="width: 600px; margin: 0px auto;">Pickadate.js —
+                <a href="http://amsul.ca/pickadate.js/" target="_blank">http://amsul.ca/pickadate.js/</a>
+            </p>
+            <p style="width: 600px; margin: 0px auto;">Lettering.js —
+                <a href="http://letteringjs.com/" target="_blank">http://letteringjs.com/</a>
+            </p>
+            <p style="width: 600px; margin: 0px auto;">Freetile —
+                <a href="http://yconst.com/web/freetile/" target="_blank">http://yconst.com/web/freetile/</a>
+            </p>
+            <p style="width: 600px; margin: 0px auto;">Backstretch —
+                <a href="http://srobbin.com/jquery-plugins/backstretch/" target="_blank">http://srobbin.com/jquery-plugins/backstretch/</a>
+            </p>
+            <p style="width: 600px; margin: 0px auto;">Hook —
+                <a href="http://usehook.com/" target="_blank">http://usehook.com</a>
+            </p>
+            <p style="width: 600px; margin: 0px auto;">Echo JS —
+                <a href="http://www.echojs.com/" target="_blank">http://www.echojs.com/</a>
+            </p>
+            <p style="width: 600px; margin: 0px auto;">Up to date —
+                <a href="http://uptodate.frontendrescue.org/" target="_blank">http://uptodate.frontendrescue.org/</a>
+            </p>
+            <p style="width: 600px; margin: 0px auto;">JS Fiddle —
+                <a href="http://jsfiddle.net/" target="_blank">http://jsfiddle.net/</a>
+            </p>
+            <h4>
+                <br>
+            </h4>
+            <h4>免费PS素材</h4>
+            <p style="width: 600px; margin: 0px auto;">PSDS.co —
+                <a href="http://psds.co/" target="_blank">www.psds.co</a>
+            </p>
+            <p style="width: 600px; margin: 0px auto;">Fribbble —
+                <a href="http://fribbble.com/" target="_blank">www.fribbble.com</a>
+            </p>
+            <p style="width: 600px; margin: 0px auto;">Premium Pixels —
+                <a href="http://www.premiumpixels.com/" target="_blank">www.premiumpixels.com</a>
+            </p>
+            <p style="width: 600px; margin: 0px auto;">Teehan+Lax iOS 7 Gui PSD (iPhone)—&nbsp;
+                <a href="http://www.teehanlax.com/tools/iphone/" target="_blank">www.teehanlax.com/tools/iphone</a>
+            </p>
+            <p style="width: 600px; margin: 0px auto;">Teehan+Lax iOS 7 Gui PSD (iPad) —
+                <a href="http://www.teehanlax.com/tools/ipad/" target="_blank">www.teehanlax.com/tools/ipad/</a>
+            </p>
+            <p style="width: 600px; margin: 0px auto;">iPhone Mockuuups —
+                <a href="http://www.mockuuups.com/" target="_blank">www.mockuuups.com</a>
+            </p>
+            <p style="width: 600px; margin: 0px auto;">Freebiesbug —
+                <a href="http://freebiesbug.com/" target="_blank">http://freebiesbug.com/</a>
+            </p>
+            <p style="width: 600px; margin: 0px auto;">Marvel —
+                <a href="https://marvelapp.com/resources/" target="_blank">https://marvelapp.com/resources/</a>
+            </p>
+            <p style="width: 600px; margin: 0px auto;">Ui Space —
+                <a href="http://uispace.net/" target="_blank">http://uispace.net</a>
+            </p>
+            <p style="width: 600px; margin: 0px auto;">DB Freebies —
+                <a href="http://dbfreebies.co/" target="_blank">http://dbfreebies.co</a>
+            </p>
+            <p style="width: 600px; margin: 0px auto;">365 PSD —
+                <a href="http://365psd.com/" target="_blank">http://365psd.com/</a>
+            </p>
+            <p style="width: 600px; margin: 0px auto;">Pixel Buddha —
+                <a href="http://pixelbuddha.net/" target="_blank">http://pixelbuddha.net/</a>
+            </p>
+            <p style="width: 600px; margin: 0px auto;">Pixels Daily —
+                <a href="http://pixelsdaily.com/" target="_blank">http://pixelsdaily.com/</a>
+            </p>
+            <h4>
+                <br>
+            </h4>
+            <h4>图标设计</h4>
+            <p style="width: 600px; margin: 0px auto;">Other Icons —
+                <a href="http://www.othericons.com/" target="_blank">www.othericons.com</a>
+            </p>
+            <p style="width: 600px; margin: 0px auto;">Batch —
+                <a href="http://adamwhitcroft.com/batch/" target="_blank">www.adamwhitcroft.com/batch/</a>
+            </p>
+            <p style="width: 600px; margin: 0px auto;">Icon Sweets —
+                <a href="http://iconsweets.com/" target="_blank">www.iconsweets.com</a>
+            </p>
+            <p style="width: 600px; margin: 0px auto;">Ico Moon —
+                <a href="http://icomoon.io/" target="_blank">www.icomoon.io</a>
+            </p>
+            <p style="width: 600px; margin: 0px auto;">Flat Icon —
+                <a href="http://www.flaticon.com/" target="_blank">http://www.flaticon.com</a>
+            </p>
+            <p style="width: 600px; margin: 0px auto;">The Noun Project —
+                <a href="http://thenounproject.com/" target="_blank">http://thenounproject.com</a>
+            </p>
+            <p style="width: 600px; margin: 0px auto;">Perfect Icons —
+                <a href="http://perfecticons.com/" target="_blank">http://perfecticons.com/</a>
+            </p>
+            <p style="width: 600px; margin: 0px auto;">Iconfinder —
+                <a href="http://www.iconfinder.com/" target="_blank">www.iconfinder.com</a>
+            </p>
+            <h4>
+                <br>
+            </h4>
+            <h4>压缩图片</h4>
+            <p style="width: 600px; margin: 0px auto;">Tiny Png —
+                <a href="https://tinypng.com/" target="_blank">www.tinypng.com</a>
+            </p>
+            <p style="width: 600px; margin: 0px auto;">JPEGmini —
+                <a href="http://www.jpegmini.com/" target="_blank">www.jpegmini.com</a>
+            </p>
+            <p style="width: 600px; margin: 0px auto;">ImageOptim —
+                <a href="http://imageoptim.com/" target="_blank">www.imageoptim.com</a>
+            </p>
+            <h4>
+                <br>
+            </h4>
+            <h4>PS工具和插件</h4>
+            <p style="width: 600px; margin: 0px auto;">Mac Rabbit Slicy —
+                <a href="http://macrabbit.com/slicy/" target="_blank">www.macrabbit.com/slicy/</a>
+            </p>
+            <p style="width: 600px; margin: 0px auto;">Renamy —
+                <a href="http://www.renamy.com/" target="_blank">www.renamy.com</a>
+            </p>
+            <p style="width: 600px; margin: 0px auto;">Blendme.in —
+                <a href="http://blendme.in/" target="_blank">www.blendme.in</a>
+            </p>
+            <p style="width: 600px; margin: 0px auto;">Freeagent —
+                <a href="http://www.freeagent.com/" target="_blank">www.freeagent.com</a>
+            </p>
+            <p style="width: 600px; margin: 0px auto;">Freshbooks —
+                <a href="http://www.freshbooks.com/" target="_blank">www.freshbooks.com</a>
+            </p>
+            <p style="width: 600px; margin: 0px auto;">Xero —
+                <a href="http://www.xero.com/" target="_blank">http://www.xero.com/</a>
+            </p>
+            <p style="width: 600px; margin: 0px auto;">Crunch —
+                <a href="http://www.crunch.co.uk/" target="_blank">http://www.crunch.co.uk</a>
+            </p>
+            <p style="width: 600px; margin: 0px auto;">Slimvoice —
+                <a href="http://slimvoice.co/" target="_blank">http://slimvoice.co/</a>
+            </p>
+            <p style="width: 600px; margin: 0px auto;">Ballpark —
+                <a href="http://www.getballpark.com/" target="_blank">http://www.getballpark.com</a>
+            </p>
+            <h4>法律</h4>
+            <p style="width: 600px; margin: 0px auto;">Andrew Clarke’s Contract Killer —
+                <a href="http://stuffandnonsense.co.uk/projects/contract-killer/" target="_blank">www.stuffandnonsense.co.uk/projects/contract-killer/</a>
+            </p>
+            <p style="width: 600px; margin: 0px auto;">Proper App —
+                <a href="http://properapp.com/" target="_blank">www.properapp.com</a>
+            </p>
+            <p style="width: 600px; margin: 0px auto;">iubenda —
+                <a href="http://www.iubenda.com/" target="_blank">www.iubenda.com</a>
+            </p>
+            <p style="width: 600px; margin: 0px auto;">Docracy —
+                <a href="http://www.docracy.com/" target="_blank">http://www.docracy.com/</a>
+            </p>
+            <h4>灵感</h4>
+            <p style="width: 600px; margin: 0px auto;">Siteinspire —
+                <a href="http://www.siteinspire.com/" target="_blank">www.siteinspire.com</a>
+            </p>
+            <p style="width: 600px; margin: 0px auto;">Land Book —
+                <a href="http://land-book.com/" target="_blank">www.land-book.com</a>
+            </p>
+            <p style="width: 600px; margin: 0px auto;">Awwwards —
+                <a href="http://www.awwwards.com/" target="_blank">www.awwwards.com</a>
+            </p>
+            <p style="width: 600px; margin: 0px auto;">The Best Designs —
+                <a href="http://www.thebestdesigns.com/" target="_blank">www.thebestdesigns.com</a>
+            </p>
+            <p style="width: 600px; margin: 0px auto;">Dribbble —
+                <a href="http://dribbble.com/" target="_blank">www.dribbble.com</a>
+            </p>
+            <p style="width: 600px; margin: 0px auto;">Behance —
+                <a href="http://www.behance.com/" target="_blank">www.behance.com</a>
+            </p>
+            <p style="width: 600px; margin: 0px auto;">Niice —
+                <a href="http://niice.co/" target="_blank">http://niice.co</a>
+            </p>
+            <p style="width: 600px; margin: 0px auto;">One Page Love —
+                <a href="http://onepagelove.com/" target="_blank">http://onepagelove.com/</a>
+            </p>
+            <h4>
+                <br>
+            </h4>
+            <h4>托管</h4>
+            <p style="width: 600px; margin: 0px auto;">Propagated Yet?&nbsp;
+                <a href="http://propagatedyet.com/" target="_blank">www.propagatedyet.com</a>
+            </p>
+            <p style="width: 600px; margin: 0px auto;">Instant Domain Search —
+                <a href="http://instantdomainsearch.com/" target="_blank">www.instantdomainsearch.com</a>
+            </p>
+            <p style="width: 600px; margin: 0px auto;">Domainr —
+                <a href="https://domai.nr/" target="_blank">https://domai.nr/</a>
+            </p>
+            <h4>工作平台</h4>
+            <p style="width: 600px; margin: 0px auto;">Crew —
+                <a href="http://www.pickcrew.com/" target="_blank">www.pickcrew.com</a>
+            </p>
+            <p style="width: 600px; margin: 0px auto;">Juiiicy —
+                <a href="http://www.juiiicy.com/" target="_blank">www.juiiicy.com</a>
+            </p>
+            <p style="width: 600px; margin: 0px auto;">Dribbble Jobs —
+                <a href="http://dribbble.com/jobs" target="_blank">www.dribbble.com/jobs</a>
+            </p>
+            <p style="width: 600px; margin: 0px auto;">Authentic Jobs —
+                <a href="http://www.authenticjobs.com/" target="_blank">www.authenticjobs.com</a>
+            </p>
+            <p style="width: 600px; margin: 0px auto;">Workfu —
+                <a href="http://www.workfu.com/" target="_blank">www.workfu.com</a>
+            </p>
+            <p style="width: 600px; margin: 0px auto;">Onsite —
+                <a href="http://onsite.io/" target="_blank">www.onsite.io</a>
+            </p>
+            <h4>地图</h4>
+            <p style="width: 600px; margin: 0px auto;">Mapbox —
+                <a href="https://www.mapbox.com/" target="_blank">www.mapbox.com</a>
+            </p>
+            <p style="width: 600px; margin: 0px auto;">Leaflet —
+                <a href="http://leafletjs.com/" target="_blank">www.leafletjs.com</a>
+            </p>
+            <p style="width: 600px; margin: 0px auto;">Google Map Builder —
+                <a href="http://googlemapbuilder.mynameisdonald.com/" target="_blank">http://googlemapbuilder.mynameisdonald.com/</a>
+            </p>
+            <p style="width: 600px; margin: 0px auto;">Snazzy maps —
+                <a href="http://www.snazzymaps.com/" target="_blank">http://www.snazzymaps.com</a>
+            </p>
+            <h4>在线学习平台</h4>
+            <p style="width: 600px; margin: 0px auto;">Treehouse —
+                <a href="http://www.teamtreehouse.com/" target="_blank">www.teamtreehouse.com</a>
+            </p>
+            <p style="width: 600px; margin: 0px auto;">Steer —
+                <a href="https://www.steer.me/" target="_blank">www.steer.me</a>
+            </p>
+            <p style="width: 600px; margin: 0px auto;">Lynda —
+                <a href="http://www.lynda.com/" target="_blank">www.lynda.com</a>
+            </p>
+            <p style="width: 600px; margin: 0px auto;">Codeacademy —
+                <a href="http://www.codecademy.com/#!/exercises/0" target="_blank">www.codecademy.com</a>
+            </p>
+            <p style="width: 600px; margin: 0px auto;">Code School —
+                <a href="https://www.codeschool.com/" target="_blank">www.codeschool.com</a>
+            </p>
+            <p style="width: 600px; margin: 0px auto;">Udacity —
+                <a href="http://www.udacity.com/" target="_blank">www.udacity.com</a>
+            </p>
+            <p style="width: 600px; margin: 0px auto;">Code.org —
+                <a href="http://code.org/" target="_blank">http://code.org/</a>
+            </p>
+            <p style="width: 600px; margin: 0px auto;">WebPlatform —
+                <a href="http://www.webplatform.org/" target="_blank">http://www.webplatform.org/</a>
+            </p>
+            <h4>
+                <br>
+            </h4>
+            <h4>播客</h4>
+            <p style="width: 600px; margin: 0px auto;">The Freelance Web —
+                <a href="http://www.thefreelanceweb.com/" target="_blank">www.thefreelanceweb.com</a>
+            </p>
+            <p style="width: 600px; margin: 0px auto;">Unfinished Business —
+                <a href="http://www.unfinished.bz/" target="_blank">www.unfinished.bz</a>
+            </p>
+            <p style="width: 600px; margin: 0px auto;">Happy Monday —
+                <a href="http://www.happymondaypodcast.com/" target="_blank">www.happymondaypodcast.com</a>
+            </p>
+            <p style="width: 600px; margin: 0px auto;">Boagworld —
+                <a href="http://boagworld.com/show/" target="_blank">www.boagworld.com/show/</a>
+            </p>
+            <p style="width: 600px; margin: 0px auto;">Shop Talk Show —
+                <a href="http://shoptalkshow.com/" target="_blank">www.shoptalkshow.com</a>
+            </p>
+            <p style="width: 600px; margin: 0px auto;">The Back to Front Show —
+                <a href="http://backtofrontshow.com/" target="_blank">www.backtofrontshow.com</a>
+            </p>
+            <p style="width: 600px; margin: 0px auto;">The Big Web Show —
+                <a href="http://www.zeldman.com/category/the-big-web-show/" target="_blank">www.zeldman.com/category/the-big-web-show/</a>
+            </p>
+            <p style="width: 600px; margin: 0px auto;">Upfront Podcast —
+                <a href="http://upfrontpodcast.com/" target="_blank">www.upfrontpodcast.com</a>
+            </p>
+            <p style="width: 600px; margin: 0px auto;">The Industry —
+                <a href="http://theindustry.cc/category/podcast/" target="_blank">www.theindustry.cc/category/podcast/</a>
+            </p>
+            <p style="width: 600px; margin: 0px auto;">Iterate —
+                <a href="http://www.imore.com/iterate" target="_blank">http://www.imore.com/iterate</a>
+            </p>
+            <h4>设计社区</h4>
+            <p style="width: 600px; margin: 0px auto;">Designer News —
+                <a href="https://news.layervault.com/" target="_blank">https://news.layervault.com/</a>
+            </p>
+            <p style="width: 600px; margin: 0px auto;">Designers Talk —
+                <a href="http://www.designerstalk.com/forums/" target="_blank">http://www.designerstalk.com/forums/</a>
+            </p>
+            <p style="width: 600px; margin: 0px auto;">Quora —
+                <a href="https://www.quora.com/" target="_blank">https://www.quora.com/</a>
+            </p>
+            <p style="width: 600px; margin: 0px auto;">Stack Exchange —
+                <a href="http://stackexchange.com/sites" target="_blank">http://stackexchange.com/sites</a>
+            </p>
+            <p style="width: 600px; margin: 0px auto;">Reddit /Design —
+                <a href="http://www.reddit.com/r/Design/" target="_blank">http://www.reddit.com/r/Design/</a>
+            </p>
+            <p style="width: 600px; margin: 0px auto;">Reddit /Web Design —
+                <a href="http://www.reddit.com/r/web_design" target="_blank">http://www.reddit.com/r/web_design</a>
+            </p>
+            <h4>
+                <br>
+            </h4>
+            <h4>写作平台</h4>
+            <p style="width: 600px; margin: 0px auto;">Medium —
+                <a href="http://www.medium.com/" target="_blank">www.medium.com</a>
+            </p>
+            <p style="width: 600px; margin: 0px auto;">Svbtle —
+                <a href="https://svbtle.com/" target="_blank">https://svbtle.com/</a>
+            </p>
+            <p style="width: 600px; margin: 0px auto;">Ghost —
+                <a href="https://ghost.org/" target="_blank">https://ghost.org/</a>
+            </p>
+            <p style="width: 600px; margin: 0px auto;">WordPress —
+                <a href="http://www.wordpress.com/" target="_blank">www.wordpress.com</a>&nbsp;/&nbsp;
+                <a href="http://www.wordpress.org/" target="_blank">www.wordpress.org</a>
+            </p>
+            <p style="width: 600px; margin: 0px auto;">Squarespace —
+                <a href="http://squarespace.com/" target="_blank">http://squarespace.com</a>
+            </p>
+            <p style="width: 600px; margin: 0px auto;">Roon —
+                <a href="https://roon.io/" target="_blank">https://roon.io/</a>
+            </p>
+            <h4>演讲</h4>
+            <p style="width: 600px; margin: 0px auto;">Speaking.io —
+                <a href="http://speaking.io/" target="_blank">www.speaking.io</a>
+            </p>
+            <p style="width: 600px; margin: 0px auto;">Mark Boulton’s Tips —
+                <a href="http://markboulton.co.uk/journal/speakingtips" target="_blank">www.markboulton.co.uk/journal/speakingtips</a>
+            </p>
+            <p style="width: 600px; margin: 0px auto;">On Speaking by Brad Frost —
+                <a href="http://bradfrostweb.com/blog/post/on-speaking/" target="_blank">www.bradfrostweb.com/blog/post/on-speaking/</a>
+            </p>
+            <p style="width: 600px; margin: 0px auto;">Public speaking for the (formerly) terrified by Rachel Andrew —
+                <a href="http://www.rachelandrew.co.uk/archives/2012/05/02/public-speaking-for-the-formerly-terrified/"
+                    target="_blank">www.rachelandrew.co.uk/archives/2012/05/02/public-speaking-for-the-formerly-terrified/</a>
+            </p>
+            <p style="width: 600px; margin: 0px auto;">10 Kick ass presentation techniques (Treehouse) —
+                <a href="http://blog.teamtreehouse.com/10-kick-ass-presentation-techniques"
+                    target="_blank">http://blog.teamtreehouse.com/10-kick-ass-presentation-techniques</a>
+            </p>
+            <p style="width: 600px; margin: 0px auto;">Suggestions for Speakers by Frank Chimero —
+                <a href="http://frankchimero.com/blog/suggestions-for-speakers/"
+                    target="_blank">http://frankchimero.com/blog/suggestions-for-speakers/</a>
+            </p>
+            <p style="width: 600px; margin: 0px auto;">The best advice on public speaking by Ladies in Tech —
+                <a href="http://ladiesintech.com/the-best-advice-on-public-speaking/"
+                    target="_blank">http://ladiesintech.com/the-best-advice-on-public-speaking/</a>
+            </p>
+            <p style="width: 600px; margin: 0px auto;">You’re paying to speak by Remy Sharp —
+                <a href="http://remysharp.com/2014/03/07/youre-paying-to-speak/" target="_blank">http://remysharp.com/2014/03/07/youre-paying-to-speak/</a>
+            </p>
+            <h4>支付</h4>
+            <p style="width: 600px; margin: 0px auto;">Stripe —
+                <a href="http://www.stripe.com/" target="_blank">www.stripe.com</a>
+            </p>
+            <p style="width: 600px; margin: 0px auto;">GoCardless —
+                <a href="http://www.gocardless.com/" target="_blank">www.gocardless.com</a>
+            </p>
+            <p style="width: 600px; margin: 0px auto;">Plasso —
+                <a href="https://plasso.co/" target="_blank">https://plasso.co</a>
+            </p>
+            <h4>便捷工具</h4>
+            <p style="width: 600px; margin: 0px auto;">Copy Paste Character —
+                <a href="http://copypastecharacter.com/" target="_blank">www.copypastecharacter.com</a>
+            </p>
+            <p style="width: 600px; margin: 0px auto;">JustDelete.me —
+                <a href="http://justdelete.me/" target="_blank">www.justdelete.me</a>
+            </p>
+            <p style="width: 600px; margin: 0px auto;">What’s my UDID? —
+                <a href="http://whatsmyudid.com/" target="_blank">www.whatsmyudid.com</a>
+            </p>
+            <p style="width: 600px; margin: 0px auto;">Shapecatcher —
+                <a href="http://shapecatcher.com/" target="_blank">www.shapecatcher.com</a>
+            </p>
+            <p style="width: 600px; margin: 0px auto;">UI Names —
+                <a href="http://uinames.com/" target="_blank">http://uinames.com/</a>
+            </p>
+            <p style="width: 600px; margin: 0px auto;">UI Faces —
+                <a href="http://uifaces.com/" target="_blank">http://uifaces.com/</a>
+            </p>
+            <p style="width: 600px; margin: 0px auto;">UI Blurbs —
+                <a href="http://uiblurbs.com/" target="_blank">http://uiblurbs.com</a>
+            </p>
+            <p style="width: 600px; margin: 0px auto;">Density Converter —
+                <a href="http://density.brdrck.me/" target="_blank">http://density.brdrck.me</a>
+            </p>
+            <p style="width: 600px; margin: 0px auto;">LayerVault —
+                <a href="https://layervault.com/" target="_blank">https://layervault.com</a>
+            </p>
+            <p style="width: 600px; margin: 0px auto;">Nice Entity —
+                <a href="http://nice-entity.com/" target="_blank">http://nice-entity.com</a>
+            </p>
+            <p style="width: 600px; margin: 0px auto;">PlaceIMG —
+                <a href="http://placeimg.com/" target="_blank">http://placeimg.com/</a>
+            </p>
+            <p style="width: 600px; margin: 0px auto;">lorempixel —
+                <a href="http://lorempixel.com/" target="_blank">http://lorempixel.com/</a>
+            </p>
+            <p style="width: 600px; margin: 0px auto;">Facebox —
+                <a href="http://facebox.io/" target="_blank">http://facebox.io</a>
+            </p>
+            <h4>图书</h4>
+            <p style="width: 600px; margin: 0px auto;">Grid Systems in Graphic Design —
+                <a href="http://amzn.to/1aNQC8B" target="_blank">http://amzn.to/1aNQC8B</a>
+            </p>
+            <p style="width: 600px; margin: 0px auto;">HTML &amp; CSS: Design and Build Web Sites —
+                <a href="http://amzn.to/1biuvJi" target="_blank">http://amzn.to/1biuvJi</a>
+            </p>
+            <p style="width: 600px; margin: 0px auto;">How to be a Graphic Designer, Without Losing Your Soul —
+                <a href="http://amzn.to/1eooTjo" target="_blank">http://amzn.to/1eooTjo</a>
+            </p>
+            <p style="width: 600px; margin: 0px auto;">The Shape of Design —
+                <a href="http://www.buyolympia.com/q/Item=frank-chimero-the-shape-of-design" target="_blank">http://www.buyolympia.com/q/Item=frank-chimero-the-shape-of-design</a>
+            </p>
+            <p style="width: 600px; margin: 0px auto;">A Practical Guide to Designing for the Web —
+                <a href="http://www.fivesimplesteps.com/products/a-practical-guide-to-designing-for-the-web"
+                    target="_blank">http://www.fivesimplesteps.com/products/a-practical-guide-to-designing-for-the-web</a>
+            </p>
+            <p style="width: 600px; margin: 0px auto;">Hardboiled Web Design —
+                <a href="https://shop.smashingmagazine.com/hardboiled-web-design.html" target="_blank">https://shop.smashingmagazine.com/hardboiled-web-design.html</a>
+            </p>
+            <p style="width: 600px; margin: 0px auto;">Designing for the web (Free) —
+                <a href="http://designingfortheweb.co.uk/" target="_blank">http://designingfortheweb.co.uk/</a>
+            </p>
+            <p style="width: 600px; margin: 0px auto;">Smashing Book #4 —
+                <a href="https://shop.smashingmagazine.com/smashing-book-4-new-perspectives-on-web-design.html"
+                    target="_blank">https://shop.smashingmagazine.com/smashing-book-4-new-perspectives-on-web-design.html</a>
+            </p>
+            <p style="width: 600px; margin: 0px auto;">The Geometry of Type —
+                <a href="http://amzn.to/1ekRiSV" target="_blank">http://amzn.to/1ekRiSV</a>
+            </p>
+            <p style="width: 600px; margin: 0px auto;">Insites: The Book —
+                <a href="http://viewportindustries.com/insites-the-book" target="_blank">http://viewportindustries.com/insites-the-book</a>
+            </p>
+            <p style="width: 600px; margin: 0px auto;">Don’t Make Me Think —
+                <a href="http://amzn.to/1ekRul6" target="_blank">http://amzn.to/1ekRul6</a>
+            </p>
+            <p style="width: 600px; margin: 0px auto;">Above the Fold —
+                <a href="http://amzn.to/1cLAIdv" target="_blank">http://amzn.to/1cLAIdv</a>
+            </p>
+            <p style="width: 600px; margin: 0px auto;">Design is a Job —
+                <a href="http://www.abookapart.com/products/design-is-a-job" target="_blank">www.abookapart.com/products/design-is-a-job</a>
+            </p>
+            <p style="width: 600px; margin: 0px auto;">Thinking with Type, Second Revised and Expanded Edition: A Critical Guide for Designers, Writers, Editors, and
+                Students —
+                <a href="http://amzn.to/1ixVKOc" target="_blank">http://amzn.to/1ixVKOc</a>
+            </p>
+            <p style="width: 600px; margin: 0px auto;">The Visual Display of Quantitative Information —
+                <a href="http://amzn.to/1n8vezb" target="_blank">http://amzn.to/1n8vezb</a>
+            </p>
+            <p style="width: 600px; margin: 0px auto;">
+                <br>
+            </p>
+            <p style="width: 600px; margin: 0px auto;">
+                <br>
+            </p>
+            <p style="width: 600px; margin: 0px auto;">
+                <br>
+            </p>
+            <p style="width: 600px; margin: 0px auto;">
+                <br>
+            </p>
+            <p style="width: 600px; margin: 0px auto;">
+                <br>
+            </p>
+    </div>
+</body>
+
+</html>
